@@ -53,21 +53,3 @@ function startAnimation() {
     window.location.href = 'newpage.html';
   }, 2000); // 2 seconds (adjust the duration as needed)
 }
-
-
-// for open pages
-var animationWindow; // Global variable to store the reference to the animation window
-var secondWindow;
-
-function openPages() {
-  // Open animation page
-  animationWindow = window.open("/rocket-animation/rocket.html");
-
-  // After 10 seconds, open the second page and hide the animation page within it
-  setTimeout(function () {
-    animationWindow.close();
-    var secondWindow = window.open("/2nd-page/2nd.html");
-  }, 3000);
-}
-
-

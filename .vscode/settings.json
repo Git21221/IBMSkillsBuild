@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.mimeTypes": {
+      "text/html": ["html"],
+      "text/css": ["css"],
+      "image/png": ["png"],
+      "image/jpeg": ["jpg", "jpeg"],
+      "image/gif": ["gif"],
+      "image/svg+xml": ["svg"],
+      "application/javascript": ["js"]
+    }
+  }
