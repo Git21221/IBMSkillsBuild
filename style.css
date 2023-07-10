@@ -152,11 +152,11 @@ span:nth-child(10) {
   text-align: center;
   flex-direction: column;
   position: absolute;
-  /* background-color: red; */
   height: 30%;
   width: 40%;
-  top: 40%;
-  left: 27%;
+  top: 30%;
+  left: 30%;
+  /* background-color: red; */
 }
 #div p {
   font-size: 50px;
