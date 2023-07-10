@@ -56,26 +56,6 @@
     <button class="glassdoor-btn" id="startButton" onclick="openRocket()">Start Journey</button>
   </div>
   <div class="scene"></div>
-
-  <script>
-    function openRocket() {
-      // Create an AJAX request to fetch the content of rocket.html
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'rocket.html', true);
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          // Update the current window with the content of rocket.html
-          document.documentElement.innerHTML = xhr.responseText;
-
-          // After 2 seconds, redirect to the second.html page
-          setTimeout(function() {
-            window.location.href = '/sec-page/second.html';
-          }, 2000);
-        }
-      };
-      xhr.send();
-    }
-  </script>
   <script src="script.js" type="text/javascript"></script>
 </body>
 
