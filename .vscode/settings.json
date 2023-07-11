@@ -7,5 +7,6 @@
       "image/gif": ["gif"],
       "image/svg+xml": ["svg"],
       "application/javascript": ["js"]
-    }
+    },
+    "liveServer.settings.port": 5501
   }
