@@ -204,3 +204,15 @@ span:nth-child(10) {
 .glassdoor-btn:active {
   transform: translateY(1px);
 }
+
+/* styling navbar */
+nav{
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.leftLogo, .rightText{
+  color: #fff;
+}
