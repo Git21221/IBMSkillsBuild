@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <!-- importing aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- calling our style -->
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -25,7 +29,19 @@
   <audio autoplay loop>
     <source src="/img/bgsound.mp3">
   </audio>
-
+  <nav>
+    <div class="leftLogo">
+      Virtual Galaxy
+    </div>
+    <div class="rightText">
+      <ul>
+        <li>Home</li>
+        <li>Planet</li>
+        <li>FAQ</li>
+        <li>Signin</li>
+      </ul>
+    </div>
+  </nav>
   <section>
     <span></span>
     <span></span>
@@ -65,11 +81,14 @@
   </section>
 
   <div id="div">
-    <p>Welcome to Space </p>
+    <p data-aos="fade-right" data-aos-duration="8000">Welcome to Space </p>
     <button class="glassdoor-btn" id="startButton" onclick="openRocket()">Start Journey</button>
   </div>
   <div class="scene"></div>
   <script src="script.js" type="text/javascript"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
