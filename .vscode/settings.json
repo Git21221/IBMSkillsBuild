@@ -6,6 +6,6 @@
       "image/jpeg": ["jpg", "jpeg"],
       "image/gif": ["gif"],
       "image/svg+xml": ["svg"],
-      "application/javascript": ["js"]
+      "text/javascript": ["js"]
     }
   }
