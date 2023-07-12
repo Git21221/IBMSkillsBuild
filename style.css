@@ -6,6 +6,40 @@
 body {
   overflow: hidden;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 999;
+  color: #fff;
+  background-color: transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 3em;
+}
+
+.navbar-logo img {
+  padding: 10%;
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-links a {
+  margin-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.2em;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ff0000;
+}
+
 section {
   position: absolute;
   top: 0;
@@ -13,7 +47,7 @@ section {
   width: 100vw;
   height: 100vh;
   background: url("img/2114388.jpg");
-  background-position-x: center;
+  background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   animation: animateBg 50s linear infinite;
@@ -203,16 +237,4 @@ span:nth-child(10) {
 
 .glassdoor-btn:active {
   transform: translateY(1px);
-}
-
-/* styling navbar */
-nav{
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-}
-.leftLogo, .rightText{
-  color: #fff;
 }

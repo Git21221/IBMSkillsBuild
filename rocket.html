@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="rocket.css" type="text/css" />
+    <link rel="stylesheet" href="/rocket.css" type="text/css" />
   </head>
   <body id="loading-page">
     <div class="scene">
@@ -13,29 +13,6 @@
       </div>
     </div>
 
-    <script>
-      // animation
-      function stars() {
-        varcount = 50;
-        var scene = document.querySelector(".scene");
-        var i = 0;
-        while (i < count) {
-          var star = document.createElement("i");
-          var x = Math.floor(Math.random() * window.innerWidth);
-          var duration = Math.random() * 1;
-          var h = Math.random() * 100;
-
-          star.style.left = x + "px";
-          star.style.width = "1px";
-          star.style.height = 50 + h + "px";
-          star.style.animationDuration = duration + "s";
-
-          scene.appendChild(star);
-          i++;
-        }
-      }
-      stars();
-    </script>
     <script src="/script.js"></script>
   </body>
 </html>
