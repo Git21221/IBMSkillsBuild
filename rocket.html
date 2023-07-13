@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/rocket.css" type="text/css" />
-  </head>
-  <body id="loading-page">
-    <div class="scene">
-      <div class="rocket">
-        <img src="/rocket.png" alt="rocket" />
-      </div>
-    </div>
-
-    <script src="/script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Screen Video</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    #video-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-container">
+    <video autoplay loop>
+      <source src="img/bg.mp4" type="video/mp4">
+    </video>
+  </div>
+  <script src="./script.js"></script>
+</body>
 </html>

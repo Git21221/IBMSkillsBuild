@@ -15,7 +15,10 @@ body {
   z-index: 999;
   color: #fff;
   background-color: transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 3em;
 }
@@ -24,6 +27,12 @@ body {
   padding: 10%;
   width: 60px;
   height: 60px;
+}
+.navbar-logo p{
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 4%;
+  font-size: 22px;
 }
 
 .navbar-links a {
@@ -35,10 +44,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.navbar-links a:hover{
+.navbar-links a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   color: #ff0000;
 }
+
 
 section {
   position: absolute;
@@ -47,7 +57,7 @@ section {
   width: 100vw;
   height: 100vh;
   background: url("img/2114388.jpg");
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   animation: animateBg 50s linear infinite;
@@ -206,7 +216,10 @@ span:nth-child(10) {
   border-radius: 4px;
   color: #fff;
   background-color: transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 1;

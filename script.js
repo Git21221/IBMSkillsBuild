@@ -7,7 +7,7 @@ function openRocket() {
       document.documentElement.innerHTML = xhr.responseText;
       setTimeout(() => {
         window.location.href = "/sec-page/second.html";
-      }, 5000);
+      }, 25000);
     }
   };
   xhr.send();
