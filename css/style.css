@@ -3,24 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
+  top: 0;
   z-index: 999;
   color: #fff;
-  background-color: transparent;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.2)
-  );
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 3em;
+  background-color: black;
+  height: 3.5em;
+  width: 100%;
 }
 
 .navbar-logo img {
@@ -28,7 +27,7 @@ body {
   width: 60px;
   height: 60px;
 }
-.navbar-logo p{
+.navbar-logo p {
   position: absolute;
   margin-top: 1%;
   margin-left: 4%;
@@ -39,18 +38,18 @@ body {
   margin-left: 10px;
   color: #fff;
   text-decoration: none;
-  padding: 1.2em;
+  padding: 0.3em 1.5em;
   font-size: 1.5em;
-  transition: background-color 0.3s ease;
+  margin: 5px;
+  border-radius: 30px;
 }
 
 .navbar-links a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #ff0000;
+  background-color: #fff;
+  color: black;
 }
 
-
-section {
+#star {
   position: absolute;
   top: 0;
   left: 0;
@@ -60,7 +59,8 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  animation: animateBg 50s linear infinite;
+  /* animation: animateBg 50s linear infinite; */
+
 }
 
 @keyframes animateBg {
@@ -83,6 +83,7 @@ span {
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
     0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
   animation: animate 3s linear infinite;
+  display: block;
 }
 
 span::before {
@@ -189,7 +190,7 @@ span:nth-child(10) {
   animation-duration: 2.25s;
 }
 
-#div {
+#first {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,11 +201,6 @@ span:nth-child(10) {
   width: 40%;
   top: 30%;
   left: 30%;
-  /* background-color: red; */
-}
-#div p {
-  font-size: 50px;
-  color: #fff;
 }
 
 .glassdoor-btn {
@@ -213,7 +209,7 @@ span:nth-child(10) {
   padding: 12px 24px;
   font-size: 18px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   color: #fff;
   background-color: transparent;
   background-image: linear-gradient(
@@ -250,4 +246,41 @@ span:nth-child(10) {
 
 .glassdoor-btn:active {
   transform: translateY(1px);
+}
+
+#second {
+  height: 100vh;
+  width: 100vw;
+  background-color: #010109;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#second #txt {
+  color: white;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: blue;
+}
+
+#second #video{
+  width: 100%;
+  height: 75%;
+  margin-top: 25px;
+  background-color: red;
+  border-radius: 30px;
+}
+
+#third{
+  height: 100vh;
+  width: 100vw;
+  background: blue;
+  position: absolute;
+  top: 200%;
 }
