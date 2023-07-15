@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,9 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  background-color: #010109;
 }
 
 .navbar {
@@ -18,20 +23,19 @@ body {
   z-index: 999;
   color: #fff;
   background-color: black;
-  height: 3.5em;
   width: 100%;
 }
 
-.navbar-logo img {
-  padding: 10%;
-  width: 60px;
-  height: 60px;
+.navbar-logo-and-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+  font-size: 1.2rem;
 }
-.navbar-logo p {
-  position: absolute;
-  margin-top: 1%;
-  margin-left: 4%;
-  font-size: 22px;
+
+.navbar-logo-and-text img {
+  width: 10%;
 }
 
 .navbar-links a {
@@ -39,7 +43,7 @@ body {
   color: #fff;
   text-decoration: none;
   padding: 0.3em 1.5em;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 5px;
   border-radius: 30px;
 }
@@ -67,6 +71,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
@@ -101,9 +106,11 @@ span::before {
     transform: rotate(315deg) translateX(0);
     opacity: 1;
   }
+
   70% {
     opacity: 1;
   }
+
   100% {
     transform: rotate(315deg) translateX(-1000px);
     opacity: 0;
@@ -212,10 +219,8 @@ span:nth-child(10) {
   border-radius: 20px;
   color: #fff;
   background-color: transparent;
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.2)
-  );
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.2));
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 1;
@@ -260,38 +265,37 @@ span:nth-child(10) {
   text-align: center;
 }
 
-#second #txt {
+#second #txt, #third #txt {
   color: white;
   text-align: center;
-  margin-top: 5%;
-  font-size: 20px;
-  font-weight: 400;
+  font-family: 'Outfit', sans-serif;
+  margin: 8% 0 4% 0;
+  font-size: 3rem;
 }
 
-#second #video{
-  width: 100%;
+#second #video {
+  width: 80%;
   height: 75%;
   margin-top: 25px;
-  background-color: red;
+  background-color: rgb(54, 54, 54);
   border-radius: 30px;
 }
 
-#third{
+#third {
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 200%;
-  padding-left: 4%;
   background: #010109;
 }
 
-#third h2{
-  color: white;
-  text-align: center;
-  font-size: 30px;
+.allCards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#cards{
+#cards {
   width: 350px;
   height: 500px;
   background-color: #414141;
@@ -299,7 +303,7 @@ span:nth-child(10) {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
   border-radius: 5px;
   overflow: hidden;
- margin: 60px;
+  margin: 60px;
   box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
   color: rgb(210, 210, 210);
 }
@@ -320,11 +324,11 @@ span:nth-child(10) {
   text-align: center;
 }
 
-#cards-text h2{
+#cards-text h2 {
   padding: 10px;
 }
 
-#cards-text p{
+#cards-text p {
   font-size: 18px;
 }
 
@@ -336,11 +340,9 @@ span:nth-child(10) {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 #cards-text button:hover {
   background-color: #0056b3;
 }
-
-
