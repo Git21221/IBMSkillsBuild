@@ -266,7 +266,6 @@ span:nth-child(10) {
   margin-top: 5%;
   font-size: 20px;
   font-weight: 400;
-  background-color: blue;
 }
 
 #second #video{
@@ -280,7 +279,68 @@ span:nth-child(10) {
 #third{
   height: 100vh;
   width: 100vw;
-  background: blue;
   position: absolute;
   top: 200%;
+  padding-left: 4%;
+  background: #010109;
 }
+
+#third h2{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#cards{
+  width: 350px;
+  height: 500px;
+  background-color: #414141;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+ margin: 60px;
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+  color: rgb(210, 210, 210);
+}
+
+#cards-img {
+  height: 200px;
+}
+
+#cards-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#cards-text {
+  padding: 20px;
+  text-align: center;
+}
+
+#cards-text h2{
+  padding: 10px;
+}
+
+#cards-text p{
+  font-size: 18px;
+}
+
+#cards-text button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+margin-top: 30px;
+}
+
+#cards-text button:hover {
+  background-color: #0056b3;
+}
+
+
