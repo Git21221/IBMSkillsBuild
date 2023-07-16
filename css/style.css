@@ -150,42 +150,41 @@ body {
   margin: 20px;
 }
 
-#cards {
+.cards {
   width: 350px;
   height: 500px;
   background-color: #414141;
   display: inline-block;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
   color: rgb(210, 210, 210);
 }
 
-#cards-img {
+.cards-img {
   height: 200px;
 }
 
-#cards-img img {
+.cards-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#cards-text {
+.cards-text {
   padding: 10px;
   text-align: center;
 }
 
-#cards-text > h2 {
+.cards-text > h2 {
   padding: 10px;
 }
 
-#cards-text > p {
+.cards-text > p {
   font-size: 18px;
 }
 
-#cards-text button {
+.cards-text button {
   padding: 10px 20px;
   font-size: 16px;
   background-color: #007bff;
@@ -196,11 +195,11 @@ body {
   margin-top: 30px;
 }
 
-#cards-text button:hover {
+.cards-text button:hover {
   background-color: #0056b3;
 }
 
-#secthird-btn {
+.btn {
   margin: 0 auto;
   padding: 12px 30px;
   display: block;
@@ -211,65 +210,88 @@ body {
   margin-top: 20px;
 }
 
-#secthird-btn:hover {
+.btn:hover {
   color: white;
   background-color: black;
   box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
 }
 
-/* explore section start here */
+/* ===============  explore section start here ====================*/
 #explore {
-  height: 100vh;
+  height: 70vh;
   width: 100vw;
-  display: flex;
   text-align: center;
+}
+
+#explore .h1{
+  color: white;
+  font-size: 35px;
+  padding: 10px;
+}
+
+#explore-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 25px;
 }
 
-#explore-div {
-  height: 90%;
-  width: 50%;
-  background-color: transparent;
-}
+#exploreleft-img img{
+border-radius: 10px;
 
-#explore-div h1 {
+}
+#exploreright-txt{
+  text-align: start;
   color: white;
   font-size: 30px;
-  font-weight: 400;
-  padding: 20px 0;
+  padding-left: 20px;
 }
 
-#explore-div > img {
-  border-radius: 20px;
+#exploreright-txt> p {
+  padding-bottom: 20px;
 }
-
-#explore-div > p {
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  padding: 15px;
-}
-
 
 /* =============== galery start here============= */
-#gallery{
+#gallery {
   height: 100vh;
   width: 100vw;
-  /* background-color: red; */
 }
 
-#gallery-txt{
+#gallery-txt {
   font-size: 25px;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
 }
 
-#gallery-img{
+#gallery-img {
   height: 100%;
   width: 100%;
-  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.images {
+  box-shadow: 10px 10px 20px rgba(147, 147, 147, 0.5);
+  border-radius: 20px;
+}
+
+.images > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.images > img:hover {
+  scale: 1.1;
+  transition: all 1s ease;
 }
 
 /* ==========scroll to  top========= */

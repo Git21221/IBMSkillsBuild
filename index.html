@@ -124,13 +124,13 @@
         <h2>More About Space</h2>
       </div>
       <div id="cards-wrapper">
-        <div id="cards" data-aos="fade-right"
+        <div class="cards" data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine" data-aos-duration="500">
-          <div id="cards-img">
+          <div class="cards-img">
             <img src="/img/iss.jpg" alt="img" />
           </div>
-          <div id="cards-text">
+          <div class="cards-text">
             <h2>ISS</h2>
             <p>
               The International Space Station (ISS) is a habitable space
@@ -141,11 +141,11 @@
             <button>Read More</button>
           </div>
         </div>
-        <div id="cards" data-aos="zoom-out-up" data-aos-duration="2000">
-          <div id="cards-img">
+        <div class="cards" data-aos="zoom-out-up" data-aos-duration="2000">
+          <div class="cards-img">
             <img src="/img/asteroid.jpg" alt="img" />
           </div>
-          <div id="cards-text">
+          <div class="cards-text">
             <h2>Asteroid</h2>
             <p>
               An asteroid is a rocky object that orbits the Sun. Ranging in size
@@ -156,13 +156,13 @@
             <button>Read More</button>
           </div>
         </div>
-        <div id="cards" data-aos="fade-left"
+        <div class="cards" data-aos="fade-left"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine" data-aos-duration="500">
-          <div id="cards-img">
+          <div class="cards-img">
             <img src="/img/spiral-galaxy.jpg" alt="img" />
           </div>
-          <div id="cards-text">
+          <div class="cards-text">
             <h2>Spiral Galaxy</h2>
             <p>
               A spiral galaxy is a vast cosmic structure characterized by spiral
@@ -174,15 +174,17 @@
           </div>
         </div>
       </div>
-      <button id="secthird-btn">Load More..</button>
+      <button class="btn">Load More..</button>
     </section>
 
     <section id="explore">
-      <div id="explore-div" data-aos="zoom-in" data-aos-duration="3000">
-        <h1>Explore the vast wonders of the Universe</h1>
-        <img src="img/milkyWay-Galaxy.jpg" alt="milkyWayGalaxy">
+      <h1 class="h1">Explore the vast wonders of the Universe</h1>
+      <div id="explore-wrapper">
+        <div id="exploreleft-img"><img src="img/milkyWay-Galaxy.jpg" alt="milkyWayGalaxy"></div>
+      <div id="exploreright-txt" data-aos="fade-left" data-aos-duration="2000">
         <p>Welcome to Virtual Galaxy, an immersive virtual galaxy experience that takes you on an extraordinary journey through the cosmos. galaxy like never before.</p>
         <p >Experience the thrill of space exploration from the comfort of your own device. Our advanced simulations and accurate 3d models bring planets,stars and galaxies to life, allowing you to interact and engage with the cosmic realm.</p>
+      </div>
       </div>
     </section>
 
@@ -191,8 +193,14 @@
         <h1>Gallery</h1>
       </div>
       <div id="gallery-img">
-
-      </div>
+          <div class="images"><img src="img/gallery1.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery7.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery3.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery9.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery5.webp" alt=""></div>
+          <div class="images"><img src="img/gallery6.webp" alt=""></div>
+        </div>
+        <button class="btn">Load More..</button>
     </section>
 
     <!-- scroll to top image  -->
