@@ -1,116 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome to space</title>
+    <!-- importing aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- calling our style -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>welcome to space</title>
-  <!-- importing aos -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- calling our style -->
-  <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- link for fabicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
-  <!-- link for fabicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="icon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png" />
-  <link rel="manifest" href="icon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-</head>
-
-<body>
-  <!-- <canvas id="mouse"> -->
-  <nav class="navbar">
-    <div class="navbar-logo-and-text">
+  <body>
+    <!-- <canvas id="mouse"> -->
+    <nav class="navbar">
+      <div class="navbar-logo-and-text">
         <img src="img/logo.png" alt="Logo" />
         GOAT Elitte Coders
-    </div>
-    <div class="navbar-links">
-      <a href="#">Home</a>
-      <a href="#">Planets</a>
-      <a href="#">FAQ</a>
-      <a href="#">Sign</a>
-    </div>
-  </nav>
-  <!-- <canvas id="canvas"></canvas> -->
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="#">Planets</a>
+        <a href="#">FAQ</a>
+        <a href="#">Sign</a>
+      </div>
+    </nav>
 
-  <div id="star">
-    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-  </div>
+    <!-- first hero section  -->
+    <section id="hero" class="firstsection">
+      <div id="first">
+        <button class="glassdoor-btn" id="startButton" onclick="openRocket()">
+          Explore The Galaxy
+        </button>
+      </div>
+    </section>
 
-  <div id="first">
-    <button class="glassdoor-btn" id="startButton" onclick="openRocket()">
-      Explore The Galaxy
-    </button>
-  </div>
+    <section id="second">
+      <div id="second-txt">
+        <h1>Immersive Virtual Exploration</h1>
+      </div>
+      <div id="second-video" data-aos="zoom-in-up" data-aos-duration="2000">
+        <video src="" autoplay></video>
+      </div>
+    </section>
 
-  <section id="second">
-    <div id="txt">
-      <h1 style="font-weight: 200;">Immersive Virtual Exploration</h1>
-    </div>
-    <div id="video">
-      <video src="" autoplay></video>
-    </div>
-  </section>
-
-  <section id="third">
-    <div id="txt">
-      <h2 style="font-weight: 200;">More About Space</h2>
-    </div>
-    <div class="allcards">
-      <div id="cards">
-        <div id="cards-img">
-          <img src="/img/iss.jpg" alt="img">
+    <section id="third">
+      <div id="third-txt">
+        <h2>More About Space</h2>
+      </div>
+      <div id="cards-wrapper">
+        <div class="cards" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-duration="500">
+          <div class="cards-img">
+            <img src="/img/iss.jpg" alt="img" />
+          </div>
+          <div class="cards-text">
+            <h2>ISS</h2>
+            <p>
+              The International Space Station (ISS) is a habitable space
+              laboratory that orbits Earth. It serves as a platform for
+              scientific research and international collaboration, advancing our
+              understanding of space and enabling exploration beyond our planet.
+            </p>
+            <button>Read More</button>
+          </div>
         </div>
-        <div id="cards-text">
-          <h2>ISS</h2>
-          <p> The International Space Station (ISS) is a habitable space laboratory that orbits Earth. It serves as a
-            platform for scientific research and international collaboration, advancing our understanding of space and
-            enabling exploration beyond our planet.</p>
-          <button>Read More</button>
+        <div class="cards" data-aos="zoom-out-up" data-aos-duration="2000">
+          <div class="cards-img">
+            <img src="/img/asteroid.jpg" alt="img" />
+          </div>
+          <div class="cards-text">
+            <h2>Asteroid</h2>
+            <p>
+              An asteroid is a rocky object that orbits the Sun. Ranging in size
+              from small boulders to massive bodies, they offer insights into
+              the early solar system and pose potential threats to Earth's
+              impact events.
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="cards" data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-duration="500">
+          <div class="cards-img">
+            <img src="/img/spiral-galaxy.jpg" alt="img" />
+          </div>
+          <div class="cards-text">
+            <h2>Spiral Galaxy</h2>
+            <p>
+              A spiral galaxy is a vast cosmic structure characterized by spiral
+              arms extending from a central nucleus. These mesmerizing
+              formations contain billions of stars, dust, and gas, showcasing
+              the captivating beauty of the universe.
+            </p>
+            <button>Read More</button>
+          </div>
         </div>
       </div>
-      <div id="cards">
-        <div id="cards-img">
-          <img src="/img/asteroid.jpg" alt="img">
-        </div>
-        <div id="cards-text">
-          <h2>Asteroid</h2>
-          <p> An asteroid is a rocky object that orbits the Sun. Ranging in size from small boulders to massive bodies,
-            they offer insights into the early solar system and pose potential threats to Earth's impact events.</p>
-          <button>Read More</button>
-        </div>
+      <button class="btn">Load More..</button>
+    </section>
+
+    <section id="explore">
+      <h1 class="h1">Explore the vast wonders of the Universe</h1>
+      <div id="explore-wrapper">
+        <div id="exploreleft-img"><img src="img/milkyWay-Galaxy.jpg" alt="milkyWayGalaxy"></div>
+      <div id="exploreright-txt" data-aos="fade-left" data-aos-duration="2000">
+        <p>Welcome to Virtual Galaxy, an immersive virtual galaxy experience that takes you on an extraordinary journey through the cosmos. galaxy like never before.</p>
+        <p >Experience the thrill of space exploration from the comfort of your own device. Our advanced simulations and accurate 3d models bring planets,stars and galaxies to life, allowing you to interact and engage with the cosmic realm.</p>
       </div>
-      <div id="cards">
-        <div id="cards-img">
-          <img src="/img/spiral-galaxy.jpg" alt="img">
-        </div>
-        <div id="cards-text">
-          <h2>Spiral Galaxy</h2>
-          <p> A spiral galaxy is a vast cosmic structure characterized by spiral arms extending from a central nucleus.
-            These mesmerizing formations contain billions of stars, dust, and gas, showcasing the captivating beauty of
-            the universe.</p>
-          <button>Read More</button>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section id="gallery">
+      <div id="gallery-txt">
+        <h1>Gallery</h1>
+      </div>
+      <div id="gallery-img">
+          <div class="images"><img src="img/gallery1.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery7.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery3.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery9.jpg" alt=""></div>
+          <div class="images"><img src="img/gallery5.webp" alt=""></div>
+          <div class="images"><img src="img/gallery6.webp" alt=""></div>
+        </div>
+        <button class="btn">Load More..</button>
+    </section>
 
-  <script src="js/script.js" type="text/javascript"></script>
-</body>
-
+    <!-- scroll to top image  -->
+    <a href="#home" class="scroll-top">
+      <img src="img/scroll-img.png" alt="scrollTotopimage" />
+    </a>
+    <!-- aos scroll animation libary cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
 </html>
