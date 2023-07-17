@@ -14,9 +14,6 @@ function openRocket() {
 
 
 // aos prevent default setting
-
-// You can also pass an optional settings object
-// below listed default settings
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -51,3 +48,5 @@ const scrollTop = () => {
 };
 
 scrollElement.addEventListener("click", scrollTop);
+
+
