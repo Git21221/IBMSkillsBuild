@@ -218,7 +218,7 @@ body {
 
 /* ===============  explore section start here ====================*/
 #explore {
-  height: 70vh;
+  height: 100vh;
   width: 100vw;
   text-align: center;
 }
@@ -227,10 +227,11 @@ body {
   color: white;
   font-size: 35px;
   padding: 10px;
+  font-weight: 200;
 }
 
 #explore-wrapper {
-  height: 100%;
+  height: 70%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -256,8 +257,9 @@ border-radius: 10px;
 
 /* =============== galery start here============= */
 #gallery {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
+  margin-bottom: 25vh;
 }
 
 #gallery-txt {
@@ -271,11 +273,11 @@ border-radius: 10px;
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 25px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 
 .images {
@@ -292,6 +294,60 @@ border-radius: 10px;
 .images > img:hover {
   scale: 1.1;
   transition: all 1s ease;
+}
+
+/* ============== contact ================ */
+#contact{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+gap: 25px;
+}
+
+.contact-img{
+  height: 80%;
+  width: 80vh;
+}
+
+.contact-from{
+  height: 90%;
+  width: 50%;
+  padding: 20px;
+  align-items: center;
+}
+
+
+.contact-from h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+border: none;
+border-radius: 20px;
 }
 
 /* ==========scroll to  top========= */
@@ -318,3 +374,6 @@ border-radius: 10px;
     transform: translateY(-3rem);
   }
 }
+
+/* ==================css for loader=============== */
+

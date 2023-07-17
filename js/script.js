@@ -51,3 +51,5 @@ const scrollTop = () => {
 };
 
 scrollElement.addEventListener("click", scrollTop);
+
+// loader
