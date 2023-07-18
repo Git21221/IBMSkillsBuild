@@ -276,14 +276,12 @@ body {
   justify-content: center;
 }
 
-.contact-from {
-  height: 90%;
-  padding: 20px;
+.contact-form {
+  width: 100%;
   align-items: center;
 }
 
-
-.contact-from h2 {
+.contact-form h2 {
   text-align: center;
   color: white;
   font-size: 30px;
@@ -329,7 +327,7 @@ column-gap: 30px;
 /* ==========scroll to  top========= */
 .scroll-top {
   position: fixed;
-  bottom: 7.5rem;
+  bottom: 3rem;
   right: 1rem;
   z-index: 1000;
 }
@@ -353,3 +351,148 @@ column-gap: 30px;
 }
 
 /* ==================css for loader=============== */
+
+
+/*================= footer section start here ============= */
+#footer {
+  width: 100vw;
+  height: 65vh;
+  position: absolute;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  border-top-left-radius: 125px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 100px 0 30px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(2) {
+  flex-basis: 15%;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.col > ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.col > ul li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-from {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.footer-from .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer-from input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.footer-from button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-from button .fas {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: #000;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
