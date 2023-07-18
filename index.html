@@ -12,6 +12,8 @@
   <!-- importing bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- font awesome icons script-->
+  <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
   <!-- importing aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -59,6 +61,7 @@
       <a class="navbar-links-txt" href="#">Planets</a>
       <a class="navbar-links-txt" href="#">FAQ</a>
       <a class="navbar-links-txt" href="#">Sign</a>
+      <i class="fa-solid fa-bars active"></i>
     </div>
   </nav>
   <!-- ==============End of navbar ============== -->
@@ -213,7 +216,7 @@
     <div class="section-on-body-headings">
       <h1>Gallery</h1>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -237,9 +240,9 @@
         <div class="carousel-item">
           <img class="d-block img" src="img/gallery10.jpg">
         </div>
-        <!-- <div class="carousel-item">
+        <div class="carousel-item">
           <img class="d-blockimg" src="img/gallery5.webp">
-        </div> -->
+        </div>
         <div class="carousel-item">
           <img class="d-block img" src="img/gallery6.webp">
         </div>
@@ -258,6 +261,22 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img class="d-block img" src="img/gallery7.jpg">
+        </div>
+        <div class="col-sm">
+          <img class="d-block img" src="img/gallery4.jpg">
+        </div>
+        <div class="col-sm">
+          <img class="d-block img" src="img/gallery11.jpg">
+        </div>
+        <div class="col-sm">
+          <img class="d-block img" src="img/gallery2.jpg">
+        </div>
+      </div>
     </div>
     <button class="loadmore-btn">Load More..</button>
   </section>
@@ -307,54 +326,14 @@
                 <div class="clearfix">
                   <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
                 </div>
-                <div class="clearfix"><input type="submit" value="Send" class="loadmore-btn"></div>
+                <div class="clearfix" style="margin: 20px 0"><input type="submit" value="Send" class="loadmore-btn">
+                </div>
               </form>
             </div>
-
           </div>
         </section>
-
       </div>
     </div>
-    <!-- </div> -->
-    <!-- <div class="contact-section-body">
-      <div class="contact-img">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3872.5397286272987!2d88.41594639411247!3d22.714569748643644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1689680602675!5m2!1sen!2sin"
-          width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="contact-form">
-        <div class="contact-container">
-
-          <form action="https://formspree.io/f/meqbojrn" method="POST">
-            <div class="form-group">
-              <div class="names">
-                <label for="name">First Name:</label>
-                <input type="text" id="name" name="name" required placeholder="First Name*" autocomplete="off" />
-              </div>
-              <div class="names">
-                <label for="name">Last Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Last Name*" autocomplete="off" />
-              </div>
-            </div>
-            <div class="form-group names">
-              <label for="email">Email Address:</label>
-              <input type="email" id="email" name="email" required placeholder="example@gmail.com*"
-                autocomplete="off" />
-            </div>
-            <div class="form-group names">
-              <label for="question">Question:</label>
-              <textarea id="question" name="question" required placeholder="Type your quries*" cols="30" rows="10"
-                autocomplete="off"></textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="loadmore-btn">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div> -->
   </section>
   <!-- ================== Ending of sixth phase (contact) ==============   -->
 

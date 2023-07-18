@@ -12,6 +12,7 @@
 
 
 html{
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -50,6 +51,8 @@ body {
 .navbar-links {
   display: flex;
   column-gap: 20px;
+  align-items: center;
+  padding: 0 30px;
 }
 
 .navbar-links-txt {
@@ -66,6 +69,9 @@ body {
   color: black;
   transition: 0.3s linear;
   text-decoration: none;
+}
+.fa-solid{
+  display: none;
 }
 /* ========== Navbar style done ============== */
 
@@ -262,9 +268,15 @@ body {
 
 /* =============== galery start here============= */
 
+.col-sm{
+  display: flex;
+  justify-content: center;
+}
+
 .img{
-  width: 400px;
-  height: min-content;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 1px 3px 10px rgb(235, 235, 235);
 }
 
 /* ============== contact ================ */
@@ -361,50 +373,6 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 /* @media querries */
 
-@media only screen and (max-width: 1266px) {
-	.section2 {
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 960px) {
-	.container {
-		padding: 0 30px 70px;
-	}
-	.section2 .col2 {
-		width: 100%;
-		display: block;
-	}
-	.section2 .col2.first {
-		margin-bottom: 10px;
-	}
-	.section2 .col2.column2 {
-		padding: 0;
-	}
-	body .sec2map {
-		height: 250px !important;
-	}
-}
-@media only screen and (max-width: 768px) {
-	.section2 .sec2addr {
-		font-size: 14px;
-	}
-	.section2 .sec2contactform h3 {
-		font-size: 16px;
-	}
-	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
-		padding: 10px;
-		margin:3px 0;
-	}
-	.section2 .sec2contactform input[type="submit"] {
-		padding: 10px 30px;
-		font-size: 14px;
-	}
-}
-@media only screen and (max-width: 420px) {
-	.section1 h1 {
-		font-size: 28px;
-	}	
-}
 
 /* ==========scroll to  top========= */
 .scroll-top {
@@ -435,26 +403,26 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 /* ==================css for loader=============== */
 
 
+
 /*================= footer section start here ============= */
 #footer {
-  width: 100vw;
-  height: 65vh;
-  position: absolute;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
   border-top-left-radius: 125px;
   font-size: 18px;
   line-height: 20px;
-  padding: 100px 0 30px;
+  padding: 50px 0 30px;
+  margin-top: 200px;
 }
 
 .row {
-  width: 85%;
-  margin: auto;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 
 .col {
@@ -554,7 +522,7 @@ hr {
   border-radius: 3px;
   position: absolute;
   top: 25px;
-  left: 0px;
+  left: -10px;
   margin: 10px;
   overflow: hidden;
 }
@@ -576,5 +544,68 @@ hr {
   }
   100% {
     left: 100%;
+  }
+}
+
+/* ========== responsiveness=========== */
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}	
+}
+
+@media (max-width:856px) {
+  #cards-wrapper{
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  #explore-wrapper{
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  .fa-solid{
+    display: contents;
+  }
+  .navbar-links-txt{
+    display: none;
   }
 }
