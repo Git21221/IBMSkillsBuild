@@ -26,7 +26,7 @@ body {
 
 
 /* ========== Navbar style ============== */
-.navbar {
+.navbar-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +134,7 @@ body {
 }
 
 .section-on-body #second-video {
-  width: 80%;
+  width: 40%;
   height: 75%;
   margin-top: 25px;
   background-color: rgb(54, 54, 54);
@@ -151,8 +151,8 @@ body {
   column-gap: 80px;
 }
 .cards {
-  width: 350px;
-  height: 550px;
+  width: 320px;
+  height: 580px;
   background-color: #292929;
   display: flex;
   flex-direction: column;
@@ -221,7 +221,6 @@ body {
 /* ===============  explore section start here ====================*/
 #explore {
   height: 100vh;
-  width: 100vw;
   text-align: center;
 }
 
@@ -244,15 +243,16 @@ body {
 #exploreleft-img{
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
   max-width: 500px;
   height: 100%;
 }
 
 #exploreleft-img img {
   border-radius: 10px;
-  width: 100%;
+  width: 75%;
   height: 100%;
-  /* object-fit: contain; */
 }
 
 #exploreright-txt {
@@ -544,68 +544,5 @@ hr {
   }
   100% {
     left: 100%;
-  }
-}
-
-/* ========== responsiveness=========== */
-@media only screen and (max-width: 1266px) {
-	.section2 {
-		width: 100%;
-	}
-}
-@media only screen and (max-width: 960px) {
-	.container {
-		padding: 0 30px 70px;
-	}
-	.section2 .col2 {
-		width: 100%;
-		display: block;
-	}
-	.section2 .col2.first {
-		margin-bottom: 10px;
-	}
-	.section2 .col2.column2 {
-		padding: 0;
-	}
-	body .sec2map {
-		height: 250px !important;
-	}
-}
-@media only screen and (max-width: 768px) {
-	.section2 .sec2addr {
-		font-size: 14px;
-	}
-	.section2 .sec2contactform h3 {
-		font-size: 16px;
-	}
-	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
-		padding: 10px;
-		margin:3px 0;
-	}
-	.section2 .sec2contactform input[type="submit"] {
-		padding: 10px 30px;
-		font-size: 14px;
-	}
-}
-@media only screen and (max-width: 420px) {
-	.section1 h1 {
-		font-size: 28px;
-	}	
-}
-
-@media (max-width:856px) {
-  #cards-wrapper{
-    flex-direction: column;
-    row-gap: 60px;
-  }
-  #explore-wrapper{
-    flex-direction: column;
-    row-gap: 60px;
-  }
-  .fa-solid{
-    display: contents;
-  }
-  .navbar-links-txt{
-    display: none;
   }
 }

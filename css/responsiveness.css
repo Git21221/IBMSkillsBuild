@@ -1,0 +1,71 @@
+
+/* ========== responsiveness=========== */
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}	
+}
+
+@media (max-width:856px) {
+  #cards-wrapper{
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  #explore-wrapper{
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  #exploreright-txt{
+	width: 100%;
+  }
+  .fa-solid{
+    display: contents;
+  }
+  .navbar-links-txt{
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+	.cards{
+		width: 100%;
+	}	
+}
