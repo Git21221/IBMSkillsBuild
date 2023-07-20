@@ -17,6 +17,8 @@
   <!-- importing aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Importing fontawesome icons -->
+  <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
   <!-- calling our style -->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" href="css/responsiveness.css" type="text/css" />
@@ -74,15 +76,15 @@
 
 
   <!-- first body section (landing page) -->
-<section class="body-start">
+  <!-- <section class="body-start">
   <img src="img/bg.jpg" alt="" srcset="">
-  <button class="glassdoor-btn" id="startButton" onclick="openRocket()">
-    Explore The Galaxy
-  </button>
-</section>
+</section> -->
 
-  <!-- <section id="hero" class="firstsection">
-  </section> -->
+  <section id="hero" class="firstsection">
+    <button class="glassdoor-btn" id="startButton" onclick="openRocket()">
+      Explore The Galaxy
+    </button>
+  </section>
   <!-- ============End of first body section =============== -->
 
 
@@ -153,7 +155,7 @@
       </div>
 
 
-      
+
       <!-- <div class="cards" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
         data-aos-duration="500">
         <div class="cards-img">
@@ -253,17 +255,17 @@
           <div class="col2 column1 first">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2188.3669594199605!2d88.41663109062866!3d22.71411824077823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f899496b04114f%3A0x44c94509fa83f16a!2sELITTE%20COLLEGE!5e0!3m2!1sen!2sin!4v1689705253867!5m2!1sen!2sin"
-              style="border:0; width: 100%; height: 500px;" allowfullscreen="" loading="lazy"
+              style="border:0; width: 100%; height: 300px;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="sec2addr">
+              <p>PO: Karnamadhabpur, PS: Ghola, Sodepur, Kolkata - 700113</p>
+              <p><span class="collig">Phone :</span> +91 1234567890</p>
+              <p><span class="collig">Email :</span> xyz@gmail.com</p>
+              <p><span class="collig">Fax :</span> +91 1234567890</p>
+            </div>
           </div>
           <div class="col2 column2 last">
             <div class="sec2innercont">
-              <div class="sec2addr">
-                <p>PO: Karnamadhabpur, PS: Ghola, Sodepur, Kolkata - 700113</p>
-                <p><span class="collig">Phone :</span> +91 1234567890</p>
-                <p><span class="collig">Email :</span> xyz@gmail.com</p>
-                <p><span class="collig">Fax :</span> +91 1234567890</p>
-              </div>
             </div>
             <div class="sec2contactform">
               <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
@@ -294,52 +296,112 @@
 
 
   <!-- ================== Starting of seventh phase (footer) ==============   -->
-  <section id="footer">
-    <div class="row">
-      <div class="col">
-        <img src="img/logo.png" alt="logo" class="logo" style="height: 90px;">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eaque culpa ducimus explicabo laborum, magnam et
-          quis ipsum. Officiis, suscipit!</p>
-      </div>
-      <div class="col">
-        <h3>College <div class="underline"><span></span></div>
-        </h3>
-        <p>Near kalyani Express</p>
-        <p>Madhawpur Village, Mohispota,</p>
-        <p>West Bengal, 700113</p>
-        <p class="email-id">example@gmail.com</p>
-        <h4>+91 - 1234578902</h4>
-      </div>
-      <div class="col">
-        <h3>links <div class="underline"><span></span></div>
-        </h3>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Planets</a></li>
-          <li><a href="">Developers details</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>newslatter <div class="underline"><span></span></div>
-        </h3>
-        <form class="footer-from">
-          <i class="far fa-envelope"></i>
-          <input type="email" placeholder="Enter your email id" required>
-          <button type="submit"><i class="fas fa-arrow-right"></i></button>
-        </form>
-        <div class="social-icons">
-          <i class="fab fa-facebook-f fa-beat-fade"></i>
-          <i class="fab fa-twitter fa-flip"></i>
-          <i class="fab fa-whatsapp fa-shake"></i>
-          <i class=" fab fa-brands fa-github fa-bounce"></i>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container modifiedFooterTop">
+        <div class="row modifyRow">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>
+              <img src="img/logo.png" alt="" srcset="" height="60" width="60">
+              Virtual Galaxy
+            </h3>
+            <p>
+              Elitte College and Engineering, Sodepur<br>
+              Near kalyani Express, Madhawpur Village, Mohispota,<br>
+              West Bengal, 700113<br>
+              <strong>Phone:</strong> +91-9330541033<br>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>
+              Useful Links
+            </h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#hero">Home</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#">Services</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="/policy/policy.html">Terms of service</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="/policy/policy.html">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#">3D Models</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i><a href="#">Planets</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#">Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Community</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#mainabout">About us</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#benefits">Benefits</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i><a href="#achievement">Accomplishments</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <hr>
-    <p class="copyright">Copyright <i class="fa-solid fa-copyright"></i> 2023 All rights
-      reserved | this template is madewith ❤️ by GOAT Elitte Coders </p>
-  </section>
+    <div class="container py-4 modifiedFooter">
+      <div class="social-links text-md-end pt-3 pt-md-0 socialLinkMod">
+        <div class="textSocials">Stay in the loop?</div>
+        <a href="https://wa.me/9330541033" target="_blank" aria-label="Visit us on Whatapp"
+          title="Whatapp (External Link)" rel="noopener noreferrer" class="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://twitter.com/oscodecommunity" target="_blank" aria-label="Visit us on Twitter"
+          title="Twitter (External Link)" rel="noopener noreferrer" class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100090940131222&amp;mibextid=ZbWKwL" target="_blank"
+          aria-label="Visit us on Facebook" title="Facebook (External Link)" rel="noopener noreferrer" class="facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/os_code_community/" target="_blank" aria-label="Visit us on Instagram"
+          title="Instagram (External Link)" rel="noopener noreferrer" class="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/oscode/" target="_blank" aria-label="Visit us on Linkedin"
+          title="Linkedin (External Link)" rel="noopener noreferrer" class="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        </a>
+        <a href="https://github.com/OSCode-Community/OSCodeCommunitySite" target="_blank" class="github">
+          <i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="me-md-auto text-md-start crMod">
+        <div class="copyright">
+          © Copyright <strong><span>Virtual Galaxy</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">Designed by <a href="#">G.O.A.T Elitte coders</a></div>
+      </div>
+    </div>
+  </footer>
   <!-- ================== Ending of seventh phase (footer) ==============   -->
 
 

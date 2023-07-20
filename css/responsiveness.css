@@ -69,3 +69,18 @@
 		width: 100%;
 	}	
 }
+@media (max-width: 992px) {
+	.modifiedFooter{
+		flex-direction: column;
+		row-gap: 20px;
+		max-width: fit-content;
+	}
+}
+@media (max-width: 668px) {
+	#footer .social-links  a{
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		font-size: 1rem;
+	}
+}
