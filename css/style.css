@@ -19,7 +19,8 @@ html{
 body {
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
-  background-color: #010109;
+  background-color: #000000;
+  overflow-x: hidden;
 }
 
 
@@ -32,9 +33,10 @@ body {
   align-items: center;
   position: fixed;
   color: #fff;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   width: 100%;
-  z-index: 999999;
+  /* top:0; */
+  z-index: 9999999999;
 }
 
 .navbar-logo-and-text {
@@ -79,9 +81,21 @@ body {
 
 
 /* ==============explore galaxy btn =============*/
+.body-start{
+  position: relative;
+  top:80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body-start img{
+  width: 100%;
+  height: auto;
+}
 #hero {
   height: 100vh;
-  background-image: url(/img/bg.jpg);
+  /* background-image: url(/img/bg.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,6 +109,7 @@ body {
 /* ======= Button style ======= */
 .glassdoor-btn {
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   justify-content: center;
