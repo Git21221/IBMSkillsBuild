@@ -122,7 +122,7 @@ a{
 
 #hero {
   height: 100vh;
-  background-image: url(img/bg.jpg);
+  background-image: url('/img/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -143,9 +143,9 @@ a{
   padding: 1rem 2rem;
   font-size: 19px;
   border-radius: 900px;
-  color: #f3f3f3;
+  color: #010042;
   background-color: transparent;
-  background-color: #3C4043;
+  background-color: #cae8ff;
   border: none;
   cursor: pointer;
   transition: 0.3s linear;
@@ -154,7 +154,7 @@ a{
 .glassdoor-btn:hover {
   transition: 0.3s linear;
   color: white;
-  background: radial-gradient(#6f2da8, #702963, #b200ed);
+  background: linear-gradient(135deg, #c06dff, #76d3ff);
   box-shadow: 20px 20px 200px rgb(126, 0, 199),
     -20px -20px 200px rgb(126, 0, 199),
     -20px -20px 200px rgb(126, 0, 199),
