@@ -1,3 +1,37 @@
+// navbar triggering
+
+
+
+function toggleMenu() {
+  var navbarLinks = document.getElementById("navbar-link-toogle");
+  navbarLinks.classList.toggle("active");
+}
+
+// Function to close the menu when a link is clicked
+function closeMenu() {
+  var navbarLinks = document.getElementById("navbar-link-toogle");
+  navbarLinks.classList.remove("active");
+}
+
+// Attach an event listener to the menu icon
+document.querySelector(".icon").addEventListener("click", toggleMenu);
+
+// Attach an event listener to each navigation link to close the menu when a link is clicked
+var navLinks = document.getElementsByClassName("navbar-links-txt");
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", closeMenu);
+}
+
+
+window.addEventListener("resize", () => {
+
+  // console.log(window.innerWidth);
+  var act = document.getElementById("navbar-link-toogle");
+  act.style["margin-left"] =  window.innerWidth - 172 + "px";
+})
+
+
+
 function openRocket() {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "/rocket.html", true);

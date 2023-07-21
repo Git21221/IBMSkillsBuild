@@ -35,7 +35,7 @@ html {
 body {
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
-  background-color: #000000;
+  background-color: #181818;
   overflow-x: hidden;
 }
 
@@ -79,6 +79,10 @@ a{
   padding: 0 30px;
 }
 
+.icon #active{
+  display: none;
+}
+
 .navbar-links-txt {
   color: #fff;
   text-decoration: none;
@@ -95,9 +99,6 @@ a{
   text-decoration: none;
 }
 
-.active {
-  display: none;
-}
 
 /* ========== Navbar style done ============== */
 
@@ -164,7 +165,7 @@ a{
 
 .section-on-body {
   margin-top: 100px;
-  background-color: #010109;
+  background-color: #181818;
   display: flex;
   flex-direction: column;
   align-items: center;
