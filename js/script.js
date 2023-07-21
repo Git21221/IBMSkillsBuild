@@ -23,12 +23,14 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 
-window.addEventListener("resize", () => {
+// window.addEventListener("resize", () => {
 
   // console.log(window.innerWidth);
-  var act = document.getElementById("navbar-link-toogle");
-  act.style["margin-left"] =  window.innerWidth - 172 + "px";
-})
+  if(window.innerWidth < 856){
+    var act = document.getElementById("navbar-link-toogle");
+    act.style["margin-left"] =  window.innerWidth - 172 + "px";
+  }
+// })
 
 
 
