@@ -4,13 +4,13 @@
 
 function toggleMenu() {
   var navbarLinks = document.getElementById("navbar-link-toogle");
-  navbarLinks.classList.toggle("active");
+  navbarLinks.classList.toggle("activei");
 }
 
 // Function to close the menu when a link is clicked
 function closeMenu() {
   var navbarLinks = document.getElementById("navbar-link-toogle");
-  navbarLinks.classList.remove("active");
+  navbarLinks.classList.remove("activei");
 }
 
 // Attach an event listener to the menu icon
