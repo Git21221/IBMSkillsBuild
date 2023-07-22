@@ -7,26 +7,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <title dir="ltr">3D CSS Solar System</title>
+  <title dir="ltr">Solar System</title>
   <link rel="shortcut icon" href="../icon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
-  <script src="//unpkg.com/three" defer></script>
-  <script src="//unpkg.com/three-globe" defer></script>
-  <script type="importmap">
-    {
-      "imports": {
-        "three": "https://unpkg.com/three@v0.149.0/build/three.module.js",
-        "three/addons/": "https://unpkg.com/three@v0.149.0/examples/jsm/"
-      }
-    }
-  </script>
   <link rel="stylesheet" href="style.css">
+  <!-- importing bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- font awesome icons script-->
+  <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsiveness.css">
 </head>
 
 <body class="opening hide-UI view-2D zoom-large data-close controls-close" id="main-page">
+  <!-- nav bar -->
+  <nav class="navbar-top">
+    <div class="navbar-logo-and-text">
+      <div class="navbar-img">
+        <img src="/img/logo.png" alt="Logo" width="80px">
+      </div>
+      <div class="navbar-txt">
+        GOAT Elitte Coders
+      </div>
+    </div>
+    <a class="icon">
+      <i class="fa-solid fa-bars" id="active"></i>
+    </a>
+    <div class="navbar-links" id="navbar-link-toogle">
+      <a class="navbar-links-txt" href="/index.html#hero">Home</a>
+      <a class="navbar-links-txt" href="404 page/index.html">Planets</a>
+      <a class="navbar-links-txt" href="#gallery">Gallery</a>
+      <a class="navbar-links-txt" href="404 page/index.html">FAQ</a>
+      <a class="navbar-links-txt" href="404 page/index.html">Sign</a>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+
   <div id="navbar">
     <a id="toggle-data" href="#data"><i class="icon-data"></i>Data</a>
-    <h1>3D CSS Solar System</h1>
+    <h1>Graphical Solar System</h1>
     <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
   </div>
   <div id="data">
@@ -168,6 +188,7 @@
   </script>
   <script src="js/prefixfree.min.js"></script>
   <script src="js/scripts.min.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

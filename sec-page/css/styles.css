@@ -87,6 +87,7 @@ video {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
+  color: #FFF;
 }
 
 article,
@@ -1509,7 +1510,7 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
 }
 
 #navbar,
@@ -1521,7 +1522,7 @@ h1 {
 #navbar {
   z-index: 99;
   position: absolute;
-  top: 0;
+  top: 90px;
   left: 0;
   padding: 16px;
   width: 100%;
@@ -1531,7 +1532,7 @@ h1 {
 #navbar a,
 #data a,
 #controls label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
   display: block;
   position: relative;
   text-decoration: none;
@@ -1568,7 +1569,7 @@ h1 {
   z-index: 99;
   position: fixed;
   opacity: 1;
-  top: 49px;
+  top: 140px;
   padding: 16px;
 }
 
@@ -1632,45 +1633,55 @@ h1 {
   content: '';
   display: block;
   position: absolute;
+  top:7px;
   width: 22px;
   height: 22px;
   border: 2px solid #FFF;
   border-radius: 16px;
+  transition: 0.3s linear;
 }
 
 #controls input:checked[type="radio"]:after {
   content: '';
   display: block;
-  top: 3px;
+  top: 10px;
   margin-left: 3px;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 10px;
   background: #FFF;
   z-index: 99;
+  transition: 0.3s linear;
+
 }
 
 #controls input[type="checkbox"]:before {
   content: '';
   display: block;
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 22px;
+  left:30px;
   border: 2px solid #FFF;
   border-radius: 16px;
+  transition: 0.3s linear;
+
 }
 
 #controls input[type="checkbox"]:after {
   content: '';
   display: block;
   top: 3px;
+  left:30px;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 10px;
   background: #FFF;
   z-index: 99;
+  transition: 0.3s linear;
+
 }
 
 #controls label.set-view:before {
@@ -1692,7 +1703,7 @@ h1 {
 }
 
 .view-2D #controls .set-view input:after {
-  margin-left: 81px;
+  margin-left: 31px;
 }
 
 #controls label.set-zoom:before {
@@ -1714,7 +1725,7 @@ h1 {
 }
 
 .zoom-close #controls .set-zoom input:after {
-  margin-left: 81px;
+  margin-left: 31px;
 }
 
 /* --------------------------------------------------------------------------- transitions */
@@ -1913,7 +1924,7 @@ body {
 
   #controls {
     padding-right: 32px;
-    top: 12px;
+    top: 80px;
   }
 
   #data {
