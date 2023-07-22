@@ -131,7 +131,10 @@ a:hover{
   justify-content: center;
 }
 
-
+.video video{
+  width: 100%;
+  height: auto;
+}
 
 /* ======= Button style ======= */
 .glassdoor-btn {
