@@ -47,6 +47,9 @@ a{
   text-decoration: none;
   color: #bfe000;
 }
+a:hover{
+  text-decoration: none;
+}
 
 
 /* ========== Navbar style ============== */
