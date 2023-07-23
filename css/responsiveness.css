@@ -135,6 +135,9 @@
 	.info {
 		flex-direction: column;
 	}
+	.venus .info, .mars .info, .saturn .info, .neptune .info{
+		flex-direction: column-reverse;
+	}
 
 	.imgs,
 	.details {

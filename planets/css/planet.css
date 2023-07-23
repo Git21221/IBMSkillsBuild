@@ -2,8 +2,10 @@ section:not(:target):not(#home),
 section:target~#home {
     display: none
 }
+
 .subNav{
-    margin: 100px 0;
+    position: relative;
+    top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,9 +77,20 @@ section:target~#home {
     height: auto;
     width: 100%;
 }
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .planet::after, .definition::after{
     content: "";
     height: 1px;
     width: 100%;
     background-color: #535353;
+}
+
+.downloadOp, .tdOp, .thdOp{
+    background-color: #535353;
+    padding: 10px 14px;
+    border-radius: 50%;
 }

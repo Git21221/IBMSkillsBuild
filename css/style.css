@@ -46,11 +46,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: #bfe000;
+  color: #d8d8d8;
+  transition: 0.3s ease-in-out;
 }
 
 a:hover {
+  transition: 0.3s ease-in-out;
   text-decoration: none;
+  color: white;
 }
 
 
