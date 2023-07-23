@@ -36,18 +36,20 @@ body {
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
   font-display: optional;
-  background-color: #181818;
+  background-color: rgb(8, 8, 8);
   overflow-x: hidden;
 }
 
 ul {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
   color: #bfe000;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
 }
 
@@ -74,12 +76,12 @@ a:hover{
 
 .navbar-links {
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
   align-items: center;
   padding: 0 30px;
 }
 
-.icon #activei{
+.icon #activei {
   display: none;
 }
 
@@ -131,7 +133,7 @@ a:hover{
   justify-content: center;
 }
 
-.video video{
+.video video {
   width: 100%;
   height: auto;
 }
@@ -510,7 +512,8 @@ select:focus {
   display: inline-block;
   line-height: 1;
 }
-#footer .footer-top .footer-contact ul a:hover{
+
+#footer .footer-top .footer-contact ul a:hover {
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -552,31 +555,40 @@ select:focus {
   justify-content: space-between;
   column-gap: 10px;
 }
-.fa-whatsapp{
-  color:#03DD45;
+
+.fa-whatsapp {
+  color: #03DD45;
 }
-.fa-twitter{
-  color:#1DA1F2;
+
+.fa-twitter {
+  color: #1DA1F2;
 }
-.fa-facebook{
-  color:#1877F2;
+
+.fa-facebook {
+  color: #1877F2;
 }
-.fa-instagram{
-  color:#E10289;
+
+.fa-instagram {
+  color: #E10289;
 }
-.fa-youtube{
-  color:#FF0000;
+
+.fa-youtube {
+  color: #FF0000;
 }
-.fa-linkedin{
-  color:#0A66C2;
+
+.fa-linkedin {
+  color: #0A66C2;
 }
-.fa-discord{
-  color:#404EED;
+
+.fa-discord {
+  color: #404EED;
 }
-.fa-github{
-  color:#FFFFFF;
+
+.fa-github {
+  color: #FFFFFF;
 }
-#footer .social-links a{
+
+#footer .social-links a {
   text-decoration: none;
   font-size: 1.4rem;
   height: 50px;
@@ -588,7 +600,8 @@ select:focus {
   justify-content: center;
   transition: 0.3s linear;
 }
-#footer .social-links a:hover{
+
+#footer .social-links a:hover {
   transform: scale(1.2);
   transition: 0.3s linear;
 }

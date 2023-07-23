@@ -4,6 +4,7 @@
 
 function toggleMenu() {
   var navbarLinks = document.getElementById("navbar-link-toogle");
+  document.getElementById("activei").classList.toggle("fa-xmark");
   navbarLinks.classList.toggle("activei");
 }
 

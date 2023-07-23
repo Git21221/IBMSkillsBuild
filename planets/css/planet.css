@@ -1,0 +1,70 @@
+section:not(:target):not(#home),
+section:target~#home {
+    display: none
+}
+.subNav{
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.subNav a{
+    color: #ffffff;
+    transition: 0.3s linear;
+    padding: 0.5rem 1.5rem;
+
+}
+.subNav a:hover{
+    transition: 0.3s linear;
+    background-color: white;
+    color: black;
+    border-radius: 60px;
+}
+#planets{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.definition{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
+    text-align: justify;
+}
+.question{
+    padding: 20px;
+    font-size: 2rem;
+}
+.answer{
+    padding: 20px;
+    font-size: 1.17rem;
+    text-align: justify;
+    color: rgb(190, 190, 190);
+}
+.planet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+.imgs, .details{
+    width: 50%;
+    padding: 20px;
+}
+#planets img{
+    height: auto;
+    width: 100%;
+}
