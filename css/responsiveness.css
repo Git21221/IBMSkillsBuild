@@ -130,3 +130,21 @@
 		font-size: 20px;
 	}
 }
+
+@media (max-width: 500px) {
+	.info {
+		flex-direction: column;
+	}
+
+	.imgs,
+	.details {
+		width: 100%;
+		margin: 20px;
+		padding: 0 50px;
+	}
+}
+@media (max-width: 664px) {
+	.subNav{
+		flex-direction: column;
+	}
+}

@@ -8,6 +8,13 @@ section:target~#home {
     align-items: center;
     justify-content: center;
     column-gap: 10px;
+    row-gap: 15px;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
 }
 .subNav a{
     color: #ffffff;
@@ -67,4 +74,10 @@ section:target~#home {
 #planets img{
     height: auto;
     width: 100%;
+}
+.planet::after, .definition::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #535353;
 }
