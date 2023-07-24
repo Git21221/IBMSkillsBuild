@@ -67,10 +67,11 @@ height: 100vh;
 
 .faq.active .icon {
   transform: rotate(180deg);
+  transition: 1s ease-in-out;
 }
 
 .icon {
-  transition: transfrom 1s ease-in;
+  transition: 1s ease-in-out;
 }
 
 @keyframes fade {
