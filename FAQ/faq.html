@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="/css/style.css"  type="text/css"/>
+    <link rel="stylesheet" href="/css/responsiveness.css"  type="text/css"/>
+
+        <!-- link for fabicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/icon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+
+    <!-- Importing fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/bf915a8f75.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+
+  <body>
+    <div>
+      <nav class="navbar-top">
+        <div class="navbar-logo-and-text">
+          <div class="navbar-img">
+            <img src="/img/logo.png" alt="Logo" width="80px" />
+          </div>
+          <div class="navbar-txt">
+            <a href="index.html">GOAT Elitte Coders</a>
+          </div>
+        </div>
+        <a class="icon">
+          <i class="fa-solid fa-bars" id="activei"></i>
+        </a>
+        <div class="navbar-links" id="navbar-link-toogle">
+          <a class="navbar-links-txt" href="/index.html">Home</a>
+          <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
+          <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
+          <a class="navbar-links-txt" href="#faq">FAQ</a>
+          <a class="navbar-links-txt" href="/404 page/index.html">Sign</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="faq-sec">
+        <h2>FAQ's</h2>
+      <div class="faq">
+        <div class="question">
+          <h3>Question here ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            molestias corporis explicabo obcaecati magnam nemo minima ea autem
+            odio blanditiis.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Question here ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            molestias corporis explicabo obcaecati magnam nemo minima ea autem
+            odio blanditiis.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Question here ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            molestias corporis explicabo obcaecati magnam nemo minima ea autem
+            odio blanditiis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const faqs = document.querySelectorAll(".faq");
+
+      faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("active");
+        });
+      });
+    </script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
