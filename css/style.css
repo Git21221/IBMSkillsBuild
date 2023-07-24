@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900;1000&display=swap");
 
-
 * {
   margin: 0px;
   padding: 0px;
@@ -19,13 +18,12 @@
 .clearfix:before,
 .clearfix:after {
   display: table;
-  content: '';
+  content: "";
 }
 
 .clearfix:after {
   clear: both;
 }
-
 
 html {
   overflow-x: hidden;
@@ -33,7 +31,7 @@ html {
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   font-display: optional;
   background-color: rgb(8, 8, 8);
@@ -55,7 +53,6 @@ a:hover {
   text-decoration: none;
   color: white;
 }
-
 
 /* ========== Navbar style ============== */
 .navbar-top {
@@ -104,11 +101,7 @@ a:hover {
   text-decoration: none;
 }
 
-
 /* ========== Navbar style done ============== */
-
-
-
 
 /* ==============explore galaxy btn =============*/
 .body-start {
@@ -127,7 +120,7 @@ a:hover {
 
 #hero {
   height: 100vh;
-  background-image: url('/img/bg.jpg');
+  background-image: url("/img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,8 +157,7 @@ a:hover {
   color: white;
   background: linear-gradient(135deg, #c06dff, #76d3ff);
   box-shadow: 20px 20px 200px rgb(126, 0, 199),
-    -20px -20px 200px rgb(126, 0, 199),
-    -20px -20px 200px rgb(126, 0, 199),
+    -20px -20px 200px rgb(126, 0, 199), -20px -20px 200px rgb(126, 0, 199),
     20px 20px 200px rgb(126, 0, 199);
 }
 
@@ -197,7 +189,6 @@ a:hover {
 }
 
 /* =============   Third section start here ============= */
-
 
 #cards-wrapper {
   display: flex;
@@ -240,12 +231,12 @@ a:hover {
   height: calc(550px - 34px - 200px);
 }
 
-.cards-text>h2 {
+.cards-text > h2 {
   color: #d1d1d1;
   font-size: 1.5rem;
 }
 
-.cards-text>p {
+.cards-text > p {
   font-size: 18px;
 }
 
@@ -321,7 +312,7 @@ a:hover {
   width: 500px;
 }
 
-#exploreright-txt>p {
+#exploreright-txt > p {
   padding-bottom: 20px;
 }
 
@@ -357,7 +348,6 @@ select:focus {
   font-weight: 300;
 }
 
-
 /* Contact Form Styling */
 
 .textcenter {
@@ -381,7 +371,6 @@ select:focus {
   display: inline-block;
   margin: 20px;
 }
-
 
 .section2 {
   width: 1200px;
@@ -448,7 +437,6 @@ select:focus {
 
 /* @media querries */
 
-
 /* ==========scroll to  top========= */
 .scroll-top {
   position: fixed;
@@ -463,7 +451,6 @@ select:focus {
 }
 
 @keyframes float {
-
   100%,
   0% {
     transform: translateY(0rem);
@@ -475,8 +462,6 @@ select:focus {
 }
 
 /* ==================css for loader=============== */
-
-
 
 /*================= footer section start here ============= */
 #footer {
@@ -560,35 +545,35 @@ select:focus {
 }
 
 .fa-whatsapp {
-  color: #03DD45;
+  color: #03dd45;
 }
 
 .fa-twitter {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .fa-facebook {
-  color: #1877F2;
+  color: #1877f2;
 }
 
 .fa-instagram {
-  color: #E10289;
+  color: #e10289;
 }
 
 .fa-youtube {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .fa-linkedin {
-  color: #0A66C2;
+  color: #0a66c2;
 }
 
 .fa-discord {
-  color: #404EED;
+  color: #404eed;
 }
 
 .fa-github {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #footer .social-links a {
@@ -607,4 +592,49 @@ select:focus {
 #footer .social-links a:hover {
   transform: scale(1.2);
   transition: 0.3s linear;
+}
+
+/* =====================css for navbar svg========================= */
+#orrery {
+  transform: rotateY(30deg) rotateX(50deg) rotateZ(0deg);
+  transform-origin: 50% 50%;
+  fill: #fff;
+  height: 50px;
+  width: 50px;
+}
+
+#orrery >
+.first,
+.second,
+.third {
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transform-origin: 50% 50%;
+}
+
+#orrery >.third {
+  animation-duration: 10s;
+}
+
+#orrery >.second {
+  animation-duration: 6.2s;
+}
+
+#orrery >.first {
+  animation-duration: 2.4s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
 }

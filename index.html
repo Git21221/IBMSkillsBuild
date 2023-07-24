@@ -41,50 +41,6 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-  <style>
-    #orrery {
-      transform: rotateY(30deg) rotateX(50deg) rotateZ(0deg);
-      transform-origin: 50% 50%;
-      fill: #fff;
-      height: 50px;
-      width: 50px;
-    }
-
-    .first,
-    .second,
-    .third {
-      animation-name: spin;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-play-state: running;
-      transition-property: opacity;
-      transition-duration: 1s;
-      transition-timing-function: linear;
-      transform-origin: 50% 50%;
-    }
-
-    .third {
-      animation-duration: 10s;
-    }
-
-    .second {
-      animation-duration: 6.2s;
-    }
-
-    .first {
-      animation-duration: 2.4s;
-    }
-
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(-360deg);
-      }
-    }
-  </style>
 </head>
 
 <body>
