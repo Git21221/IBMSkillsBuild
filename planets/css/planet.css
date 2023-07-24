@@ -30,8 +30,8 @@ section:target~#home {
     color: black;
     border-radius: 60px;
 }
-#planets{
-    max-width: 700px;
+#planets, #dplanets{
+    max-width: 1000px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -44,7 +44,6 @@ section:target~#home {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 700px;
     text-align: justify;
 }
 .question{
@@ -73,7 +72,11 @@ section:target~#home {
     width: 50%;
     padding: 20px;
 }
-#planets img{
+.details ul{
+    line-height: 2.5rem;
+    font-size: 1.19rem;
+}
+#planets img, #dplanets img{
     height: auto;
     width: 100%;
 }

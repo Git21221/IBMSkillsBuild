@@ -135,7 +135,7 @@
 	.info {
 		flex-direction: column;
 	}
-	.venus .info, .mars .info, .saturn .info, .neptune .info{
+	.venus .info, .mars .info, .saturn .info, .neptune .info, .pluto .info, .haumea .info{
 		flex-direction: column-reverse;
 	}
 
