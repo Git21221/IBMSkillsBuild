@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="description" content="3d-solar-system" />
-  <meta name="keywords" content="earth, space, moon, 3d-images 3d-animation" />
+  <meta name="keywords" content="earth, space, moon, 3d-images 3d-animation planets" />
   <meta name="author" content="GOAT Elitte Coders(Rahul Das, Saikat Das)" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>welcome to space</title>
@@ -66,9 +66,9 @@
       <div class="navbar-links" id="navbar-link-toogle">
         <a class="navbar-links-txt" href="#hero">Home</a>
         <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
-        <a class="navbar-links-txt" href="gallery/gallery.html#gallery">Gallery</a>
-        <a class="navbar-links-txt" href="404 page/index.html">FAQ</a>
-        <a class="navbar-links-txt" href="404 page/index.html">Sign</a>
+        <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
+        <a class="navbar-links-txt" href="/404 page/index.html">FAQ</a>
+        <a class="navbar-links-txt" href="/404 page/index.html">Sign</a>
       </div>
     </nav>
   </div>
@@ -124,7 +124,7 @@
 
     <div id="cards-wrapper">
 
-      <div class="cards">
+      <div class="cards" data-aos="fade-right" data-aos-duration="2000">
         <div class="cards-img">
           <img src="img/iss.jpg" alt="ISS img">
         </div>
@@ -141,25 +141,19 @@
       </div>
 
 
-      <div class="cards">
-
+      <div class="cards" data-aos="fade-left" data-aos-duration="2000">
         <div class="cards-img">
           <img src="img/asteroid.jpg" alt="img" />
         </div>
-
         <div class="cards-text">
-
           <h2>Asteroid</h2>
-
           <p>
             An asteroid is a rocky object that orbits the Sun. Ranging in size
             from small boulders to massive bodies, they offer insights into
             the early solar system and pose potential threats to Earth's
             impact events.
           </p>
-
           <button class="readmore-btn">Read More</button>
-
         </div>
       </div>
 
@@ -228,16 +222,16 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-sm" data-aos="fade-left" data-aos-duration="2000">
           <img class="d-block img" src="img/gallery7.jpg" alt="space iss">
         </div>
-        <div class="col-sm">
+        <div class="col-sm" data-aos="fade-up" data-aos-duration="2000">
           <img class="d-block img" src="img/gallery4.jpg" alt="earth">
         </div>
-        <div class="col-sm">
-          <img class="d-block img" src="img/gallery11.jpg" alt="sun, earth and fabric warp">
+        <div class="col-sm" data-aos="fade-right" data-aos-duration="2000">
+          <img class="d-block img" src="img/gallery11.jpg" alt="sun, earth and fabric warp" >
         </div>
-        <div class="col-sm">
+        <div class="col-sm" data-aos="zoom-out" data-aos-duration="2000">
           <img class="d-block img" src="img/gallery2.jpg" alt="planet">
         </div>
       </div>
@@ -280,17 +274,22 @@
             </div>
             <div class="sec2contactform">
               <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-              <form action="">
+              <form action="https://formspree.io/f/xvojgznn" method="POST">
                 <div class="clearfix">
-                  <input class="col2 first" type="text" placeholder="Name">
-                  <!-- <input class="col2 last" type="text" placeholder="LastName"> -->
+                  <input class="col2 first" type="text" placeholder="Name" required
+                  autocomplete="off">
+                  <!-- <input class="col2 last" type="text" placeholder="LastName" required
+                  autocomplete="off"> -->
                 </div>
                 <div class="clearfix">
-                  <input class="col2 first" type="Email" placeholder="Email">
-                  <input class="col2 last" type="text" placeholder="Contact Number">
+                  <input class="col2 first" type="Email" placeholder="Email" required
+                  autocomplete="off">
+                  <input class="col2 last" type="text" placeholder="Contact Number" required
+                  autocomplete="off">
                 </div>
                 <div class="clearfix">
-                  <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                  <textarea name="textarea" id="" cols="30" rows="7" placeholder="Your message here..." required
+                  autocomplete="off"></textarea>
                 </div>
                 <div class="clearfix" style="margin: 20px 0"><input type="submit" value="Send" class="loadmore-btn">
                 </div>
