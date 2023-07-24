@@ -41,6 +41,50 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
+  <style>
+    #orrery {
+      transform: rotateY(30deg) rotateX(50deg) rotateZ(0deg);
+      transform-origin: 50% 50%;
+      fill: #fff;
+      height: 50px;
+      width: 50px;
+    }
+
+    .first,
+    .second,
+    .third {
+      animation-name: spin;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+      transition-property: opacity;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+      transform-origin: 50% 50%;
+    }
+
+    .third {
+      animation-duration: 10s;
+    }
+
+    .second {
+      animation-duration: 6.2s;
+    }
+
+    .first {
+      animation-duration: 2.4s;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -64,6 +108,23 @@
         <i class="fa-solid fa-bars" id="activei"></i>
       </a>
       <div class="navbar-links" id="navbar-link-toogle">
+        <a href="sec-page/second.html" title="View Our Solar System">
+          <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
+            <circle class="sun" cx="16" cy="16" r="3.2" />
+            <g class="third">
+              <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+              <circle cx="28.2" cy="23.1" r="1.7" />
+            </g>
+            <g class="second">
+              <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+              <circle cx="10.6" cy="7.2" r="1.7" />
+            </g>
+            <g class="first">
+              <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+              <circle cx="11.7" cy="21" r="1.7" />
+            </g>
+          </svg>
+        </a>
         <a class="navbar-links-txt" href="#hero">Home</a>
         <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
         <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
@@ -229,7 +290,7 @@
           <img class="d-block img" src="img/gallery4.jpg" alt="earth">
         </div>
         <div class="col-sm" data-aos="fade-right" data-aos-duration="2000">
-          <img class="d-block img" src="img/gallery11.jpg" alt="sun, earth and fabric warp" >
+          <img class="d-block img" src="img/gallery11.jpg" alt="sun, earth and fabric warp">
         </div>
         <div class="col-sm" data-aos="zoom-out" data-aos-duration="2000">
           <img class="d-block img" src="img/gallery2.jpg" alt="planet">
@@ -276,20 +337,17 @@
               <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
               <form action="https://formspree.io/f/xvojgznn" method="POST">
                 <div class="clearfix">
-                  <input class="col2 first" type="text" placeholder="Name" required
-                  autocomplete="off">
+                  <input class="col2 first" type="text" placeholder="Name" required autocomplete="off">
                   <!-- <input class="col2 last" type="text" placeholder="LastName" required
                   autocomplete="off"> -->
                 </div>
                 <div class="clearfix">
-                  <input class="col2 first" type="Email" placeholder="Email" required
-                  autocomplete="off">
-                  <input class="col2 last" type="text" placeholder="Contact Number" required
-                  autocomplete="off">
+                  <input class="col2 first" type="Email" placeholder="Email" required autocomplete="off">
+                  <input class="col2 last" type="text" placeholder="Contact Number" required autocomplete="off">
                 </div>
                 <div class="clearfix">
                   <textarea name="textarea" id="" cols="30" rows="7" placeholder="Your message here..." required
-                  autocomplete="off"></textarea>
+                    autocomplete="off"></textarea>
                 </div>
                 <div class="clearfix" style="margin: 20px 0"><input type="submit" value="Send" class="loadmore-btn">
                 </div>
@@ -384,12 +442,12 @@
           title="Whatapp (External Link)" rel="noopener noreferrer" class="whatsapp">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <a href="https://twitter.com/" target="_blank" aria-label="Visit us on Twitter"
-          title="Twitter (External Link)" rel="noopener noreferrer" class="twitter">
+        <a href="https://twitter.com/" target="_blank" aria-label="Visit us on Twitter" title="Twitter (External Link)"
+          rel="noopener noreferrer" class="twitter">
           <i class="fa-brands fa-twitter"></i>
         </a>
-        <a href="https://www.facebook.com/" target="_blank"
-          aria-label="Visit us on Facebook" title="Facebook (External Link)" rel="noopener noreferrer" class="facebook">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Visit us on Facebook"
+          title="Facebook (External Link)" rel="noopener noreferrer" class="facebook">
           <i class="fa-brands fa-facebook"></i>
         </a>
         <a href="https://www.instagram.com/" target="_blank" aria-label="Visit us on Instagram"
@@ -420,7 +478,7 @@
 
   <!-- scroll to top image  -->
   <a href="#hero" class="scroll-top">
-    <img src="img/scroll-img.png" alt="scrollTotopimage" width="80px"/>
+    <img src="img/scroll-img.png" alt="scrollTotopimage" width="80px" />
   </a>
   <!-- scroll to top image(close)  -->
 
