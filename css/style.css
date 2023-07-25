@@ -94,12 +94,13 @@ a:hover {
   transition: 0.3s linear;
 }
 
-.navbar-links-txt:hover {
+.navbar-links-txt:hover, .highlight {
   background-color: #fff;
   color: black;
   transition: 0.3s linear;
   text-decoration: none;
 }
+
 
 /* ========== Navbar style done ============== */
 
