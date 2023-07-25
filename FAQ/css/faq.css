@@ -8,7 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  color: white;
+  color: rgb(219, 219, 219);
 }
 
 .faq-sec {
@@ -31,10 +31,10 @@ height: 100vh;
 }
 
 .faq {
-  max-width: 700px;
+  max-width: 1000px;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid rgb(219, 219, 219);
   cursor: pointer;
 }
 
@@ -46,6 +46,7 @@ height: 100vh;
 
 .question h3 {
   font-size: 1.8rem;
+  font-weight: 300;
 }
 
 .answer {
@@ -58,6 +59,7 @@ height: 100vh;
   padding-top: 1rem;
   line-height: 1.6;
   font-size: 1.4rem;
+  color: #bebebe;
 }
 
 .faq.active .answer {
