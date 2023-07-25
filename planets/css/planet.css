@@ -24,7 +24,7 @@ section:target~#home {
     padding: 0.5rem 1.5rem;
 
 }
-.subNav a:hover{
+.subNav a:hover, .highlightSub{
     transition: 0.3s linear;
     background-color: white;
     color: black;
