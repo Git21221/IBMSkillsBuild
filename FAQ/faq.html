@@ -36,43 +36,43 @@
 
 <body>
   <!-- <div class="tenor-gif-embed" data-postid="21140992" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/loading-splash-gif-21140992">Loading Splash GIF</a>from <a href="https://tenor.com/search/loading-gifs">Loading GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
-    <nav class="navbar-top">
-      <div class="navbar-logo-and-text">
-        <div class="navbar-img">
-          <img src="/img/logo.png" alt="Logo" width="80px" />
-        </div>
-        <div class="navbar-txt">
-          <a href="index.html">GOAT Elitte Coders</a>
-        </div>
+  <nav class="navbar-top">
+    <div class="navbar-logo-and-text">
+      <div class="navbar-img">
+        <img src="/img/logo.png" alt="Logo" width="80px" />
       </div>
-      <a class="icon">
-        <i class="fa-solid fa-bars" id="activei"></i>
+      <div class="navbar-txt">
+        <a href="index.html">GOAT Elitte Coders</a>
+      </div>
+    </div>
+    <a class="icon">
+      <i class="fa-solid fa-bars" id="activei"></i>
+    </a>
+    <div class="navbar-links" id="navbar-link-toogle">
+      <a href="/sec-page/second.html" title="View Our Solar System">
+        <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
+          <circle class="sun" cx="16" cy="16" r="3.2" />
+          <g class="third">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+            <circle cx="28.2" cy="23.1" r="1.7" />
+          </g>
+          <g class="second">
+            <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+            <circle cx="10.6" cy="7.2" r="1.7" />
+          </g>
+          <g class="first">
+            <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+            <circle cx="11.7" cy="21" r="1.7" />
+          </g>
+        </svg>
       </a>
-      <div class="navbar-links" id="navbar-link-toogle">
-        <a href="/sec-page/second.html" title="View Our Solar System">
-          <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
-            <circle class="sun" cx="16" cy="16" r="3.2" />
-            <g class="third">
-              <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-              <circle cx="28.2" cy="23.1" r="1.7" />
-            </g>
-            <g class="second">
-              <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-              <circle cx="10.6" cy="7.2" r="1.7" />
-            </g>
-            <g class="first">
-              <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-              <circle cx="11.7" cy="21" r="1.7" />
-            </g>
-          </svg>
-        </a>
-        <a class="navbar-links-txt" href="/index.html">Home</a>
-        <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
-        <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
-        <a class="navbar-links-txt highlight" href="#faq">FAQ</a>
-        <a class="navbar-links-txt" href="/404 page/index.html">Sign</a>
-      </div>
-    </nav>
+      <a class="navbar-links-txt" href="/index.html">Home</a>
+      <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
+      <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
+      <a class="navbar-links-txt highlight" href="#faq">FAQ</a>
+      <a class="navbar-links-txt" href="/404 page/index.html">Sign</a>
+    </div>
+  </nav>
   </div>
 
   <div class="faq-sec">
@@ -208,7 +208,15 @@
 
   </div>
   <script src="/js/script.js"></script>
-  <script src="js/faq.js"></script>
+  <script>
+    var faqs = document.querySelectorAll(".faq");
+
+    faqs.forEach((faq) => {
+      faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 
 </html>
