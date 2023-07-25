@@ -30,7 +30,7 @@ section:target~#home {
     color: black;
     border-radius: 60px;
 }
-#planets, #dplanets{
+#planets, #dplanets, #iss, #asteroid, #ss, #probe{
     max-width: 1000px;
     margin: auto;
     display: flex;
@@ -76,7 +76,7 @@ section:target~#home {
     line-height: 2.5rem;
     font-size: 1.19rem;
 }
-#planets img, #dplanets img{
+#planets img, #dplanets img, #iss img, #asteroid img, #ss img, #probe img{
     height: auto;
     width: 100%;
 }
