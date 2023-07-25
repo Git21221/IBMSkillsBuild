@@ -93,6 +93,13 @@ section:target~#home {
 }
 
 .downloadOp, .tdOp, .thdOp{
+    border: 1px solid #535353;
+    padding: 10px 14px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+.downloadOp:hover, .tdOp:hover, .thdOp:hover{
+    transition: 0.3s ease-in-out;
     background-color: #535353;
     padding: 10px 14px;
     border-radius: 50%;
