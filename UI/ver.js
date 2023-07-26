@@ -27,14 +27,14 @@ submitbtn.onclick = () =>{
 
 
     let xhr = new XMLHttpRequest();    
-    xhr.open("POST","./reotp.php",true);
+    xhr.open("POST","./UI/reotp.php",true);
     xhr.onload = () => {
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status == 200){
                 let data = xhr.response;
                 if(data=="OK"){
                     alert("Password Changed Succesfully");
-                    location.href="./Login.html";
+                    location.href="./UI/Login.html";
                 }
                 
                 else{
