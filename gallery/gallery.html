@@ -4,6 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore our 3D virtual solar system and learn about planets in an interactive space exploration.">
+    <meta name="keywords"
+        content="earth, space, moon, 3d-images 3d-animation, planets, Solar System, Virtual Solar System, Planet Models, Astronomy Visualization,Space Exploration, Educational Space Simulation, Celestial Bodies, Planetary Orbits,Astronomy App,Astronomical Visualization,Space Educational Tool,Learn About Planets,Outer Space Simulation,Solar System Exploration,Astronomical Models,Space Learning Experience,Planetary System Viewer" />
+    <meta name="author" content="GOAT Elitte Coders(Rahul Das, Saikat Das)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO(Search engine optimization) -->
+    <meta name="description"
+        content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
+    <meta name="keywords"
+        content="virtual galaxy, planets, ISS, probes, dwarf planets, solar system, information, space exploration">
+    <link rel="canonical" href="https://www.virtual-galaxy.netlify.app/">
+    <meta property="og:title" content="Virtual Galaxy - Explore Planets, ISS, Probes, Dwarf Planets, and Solar System">
+    <meta property="og:description"
+        content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
     <title>Gallery</title>
     <!-- importing bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -17,65 +32,71 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsiveness.css">
 
-         <!-- link for fabicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
-  <link rel="manifest" href="/icon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+    <!-- link for fabicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
+    <link rel="manifest" href="/icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 </head>
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar-top">
-        <div class="navbar-logo-and-text">
-            <div class="navbar-img">
-                <img src="/img/logo.png" alt="Logo" width="80px">
+    <div>
+        <nav class="navbar-top">
+            <div class="navbar-logo-and-text">
+                <div class="navbar-img">
+                    <img src="/img/logo.png" alt="Logo">
+                </div>
+                <div class="navbar-txt">
+                    GOAT Elitte Coders
+                </div>
             </div>
-            <div class="navbar-txt">
-                GOAT Elitte Coders
+            <a class="icon">
+                <i class="fa-solid fa-bars" id="activei"></i>
+            </a>
+            <div class="navbar-links" id="navbar-link-toogle">
+                <a href="/sec-page/second.html" title="View Our Solar System">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32"
+                        viewBox="0 0 32 32">
+                        <circle class="sun" cx="16" cy="16" r="3.2" />
+                        <g class="third">
+                            <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                stroke-width=".9" />
+                            <circle cx="28.2" cy="23.1" r="1.7" />
+                        </g>
+                        <g class="second">
+                            <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                stroke-width=".9" />
+                            <circle cx="10.6" cy="7.2" r="1.7" />
+                        </g>
+                        <g class="first">
+                            <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                stroke-width=".9" />
+                            <circle cx="11.7" cy="21" r="1.7" />
+                        </g>
+                    </svg>
+                </a>
+                <a class="navbar-links-txt" href="/index.html">Home</a>
+                <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
+                <a class="navbar-links-txt highlight" href="#gallery">Gallery</a>
+                <a class="navbar-links-txt" href="/FAQ/faq.html">FAQ</a>
+                <a class="navbar-links-txt" href="404 page/index.html">Sign</a>
             </div>
-        </div>
-        <a class="icon">
-            <i class="fa-solid fa-bars" id="activei"></i>
-        </a>
-        <div class="navbar-links" id="navbar-link-toogle">
-            <a href="/sec-page/second.html" title="View Our Solar System">
-                <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
-                  <circle class="sun" cx="16" cy="16" r="3.2" />
-                  <g class="third">
-                    <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-                    <circle cx="28.2" cy="23.1" r="1.7" />
-                  </g>
-                  <g class="second">
-                    <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-                    <circle cx="10.6" cy="7.2" r="1.7" />
-                  </g>
-                  <g class="first">
-                    <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-                    <circle cx="11.7" cy="21" r="1.7" />
-                  </g>
-                </svg>
-              </a>
-            <a class="navbar-links-txt" href="/index.html">Home</a>
-            <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
-            <a class="navbar-links-txt highlight" href="#gallery">Gallery</a>
-            <a class="navbar-links-txt" href="/FAQ/faq.html">FAQ</a>
-            <a class="navbar-links-txt" href="404 page/index.html">Sign</a>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- navbar end  -->
 
     <div class="container-fluid" id="gallery">
@@ -95,8 +116,8 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                     <div class="bg-black rounded shadow-sm"><img
-                            src="https://media.istockphoto.com/id/1088863384/photo/abstract-space-wallpaper-black-hole-with-nebula-over-colorful-stars-and-cloud-fields-in-outer.jpg?s=612x612&w=0&k=20&c=XmFijIN5I6magyYQ5-CV1xfWhPMs0EyuJnVCLE8n1O8=" alt=""
-                            class="img-fluid card-img-top">
+                            src="https://media.istockphoto.com/id/1088863384/photo/abstract-space-wallpaper-black-hole-with-nebula-over-colorful-stars-and-cloud-fields-in-outer.jpg?s=612x612&w=0&k=20&c=XmFijIN5I6magyYQ5-CV1xfWhPMs0EyuJnVCLE8n1O8="
+                            alt="" class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Black Hole</a></h5>
                             <p class="small text-muted mb-0">
@@ -115,13 +136,13 @@
 
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                    <div class="bg-black rounded shadow-sm"><img
-                            src="https://media.istockphoto.com/id/182090715/photo/kuiper-belt.jpg?s=612x612&w=0&k=20&c=dr6Ds-sB0Ib6dUZXPvc_6Geui1cAoiYD8gdt1GEk71A=" alt=""
-                            class="img-fluid card-img-top">
+                    <div class="bg-black rounded shadow-sm">
+                        <img src="https://media.istockphoto.com/id/182090715/photo/kuiper-belt.jpg?s=612x612&w=0&k=20&c=dr6Ds-sB0Ib6dUZXPvc_6Geui1cAoiYD8gdt1GEk71A="
+                            alt="" class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Astroid belt
 
-                            </a></h5>
+                                </a></h5>
                             <p class="small text-muted mb-0">
                                 Astroid belt: Debris-filled region between Mars and Jupiter.
                             </p>
@@ -143,7 +164,8 @@
                             class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Solar Eclipses</a></h5>
-                            <p class="small text-muted mb-0">Solar eclipses thrill skywatchers every year. You just have to be in the right place at the right time.
+                            <p class="small text-muted mb-0">Solar eclipses thrill skywatchers every year. You just have
+                                to be in the right place at the right time.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -164,7 +186,8 @@
                             class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Solar stream</a></h5>
-                            <p class="small text-muted mb-0">Solar stream: High-speed charged particles from the Sun's corona.
+                            <p class="small text-muted mb-0">Solar stream: High-speed charged particles from the Sun's
+                                corona.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -184,7 +207,8 @@
                             class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Satellites</a></h5>
-                            <p class="small text-muted mb-0">Orbiting objects used for communication, navigation, Earth observation, and more.
+                            <p class="small text-muted mb-0">Orbiting objects used for communication, navigation, Earth
+                                observation, and more.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -200,11 +224,12 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                     <div class="bg-black rounded shadow-sm"><img
-                            src="https://media.istockphoto.com/id/530045185/photo/andromeda-galaxy.webp?b=1&s=612x612&w=0&k=20&c=detEXGGdTPdJViCpJ6BMhzC78s5J1sPGgBxvRq-XnUc=" alt=""
-                            class="img-fluid card-img-top">
+                            src="https://media.istockphoto.com/id/530045185/photo/andromeda-galaxy.webp?b=1&s=612x612&w=0&k=20&c=detEXGGdTPdJViCpJ6BMhzC78s5J1sPGgBxvRq-XnUc="
+                            alt="" class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Milkiway Galaxy</a></h5>
-                            <p class="small text-muted mb-0">Vast spiral galaxy, containing billions of stars, planets, and mysteries in the universe's canvas.
+                            <p class="small text-muted mb-0">Vast spiral galaxy, containing billions of stars, planets,
+                                and mysteries in the universe's canvas.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -225,7 +250,8 @@
                             class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Moon</a></h5>
-                            <p class="small text-muted mb-0"> Earth's satellite, cold, rocky orb, reflects sunlight, tides, and holds fascination for humanity's exploration dreams.
+                            <p class="small text-muted mb-0"> Earth's satellite, cold, rocky orb, reflects sunlight,
+                                tides, and holds fascination for humanity's exploration dreams.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -241,11 +267,12 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                     <div class="bg-black rounded shadow-sm"><img
-                            src="https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""
-                            class="img-fluid card-img-top">
+                            src="https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="" class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Landing Rover</a></h5>
-                            <p class="small text-muted mb-0">Rover lands on distant world, explores, sends data, and expands humanity's knowledge of the cosmos.
+                            <p class="small text-muted mb-0">Rover lands on distant world, explores, sends data, and
+                                expands humanity's knowledge of the cosmos.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -262,11 +289,12 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                     <div class="bg-black rounded shadow-sm"><img
-                            src="https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=600" alt=""
-                            class="img-fluid card-img-top">
+                            src="https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=600"
+                            alt="" class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Astronauts</a></h5>
-                            <p class="small text-muted mb-0">Astronauts brave space's dangers, explore beyond Earth, conduct research, and push humanity's frontiers in the cosmos.
+                            <p class="small text-muted mb-0">Astronauts brave space's dangers, explore beyond Earth,
+                                conduct research, and push humanity's frontiers in the cosmos.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -286,7 +314,8 @@
                             class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Sun</a></h5>
-                            <p class="small text-muted mb-0">The Sun, a dazzling star, radiates light, heat, and life-sustaining energy, fueling our solar system's celestial dance.
+                            <p class="small text-muted mb-0">The Sun, a dazzling star, radiates light, heat, and
+                                life-sustaining energy, fueling our solar system's celestial dance.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -306,7 +335,8 @@
                             class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Mars</a></h5>
-                            <p class="small text-muted mb-0">Mars, the Red Planet, allures with its potential for life, captivating exploration, and future interplanetary possibilities for humanity.
+                            <p class="small text-muted mb-0">Mars, the Red Planet, allures with its potential for life,
+                                captivating exploration, and future interplanetary possibilities for humanity.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -323,11 +353,12 @@
                 <!-- Gallery item -->
                 <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                     <div class="bg-black rounded shadow-sm"><img
-                            src="https://media.istockphoto.com/id/1418847625/photo/telescope-watching-the-sky-and-falling-star-3d-rendering.webp?b=1&s=612x612&w=0&k=20&c=27KxZj_H-7Nka-LhHiH7J64Pv6dl61VGw6cTjOECnu0=" alt=""
-                            class="img-fluid card-img-top">
+                            src="https://media.istockphoto.com/id/1418847625/photo/telescope-watching-the-sky-and-falling-star-3d-rendering.webp?b=1&s=612x612&w=0&k=20&c=27KxZj_H-7Nka-LhHiH7J64Pv6dl61VGw6cTjOECnu0="
+                            alt="" class="img-fluid card-img-top">
                         <div class="p-4">
                             <h5> <a href="#" class="text-white">Telescope</a></h5>
-                            <p class="small text-muted mb-0">Optical instrument magnifies distant celestial objects, revealing the cosmos' wonders.
+                            <p class="small text-muted mb-0">Optical instrument magnifies distant celestial objects,
+                                revealing the cosmos' wonders.
                             </p>
                             <div
                                 class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
@@ -339,14 +370,14 @@
                     </div>
                 </div>
                 <!-- End -->
+            </div>
         </div>
-    </div>
-      <!-- scroll to top image  -->
-  <a href="#gallery" class="scroll-top">
-    <img src="/img/scroll-img.png" alt="scrollTotopimage" width="80px">
-  </a>
-  <!-- scroll to top image(close)  -->
-    <script src="/js/script.js"></script>
+        <!-- scroll to top image  -->
+        <a href="#gallery" class="scroll-top">
+            <img src="/img/scroll-img.png" alt="scrollTotopimage" width="80px">
+        </a>
+        <!-- scroll to top image(close)  -->
+        <script src="/js/script.js"></script>
 </body>
 
 </html>
