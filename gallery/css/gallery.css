@@ -23,3 +23,7 @@ body{
 .bg-black{
     background-color: rgb(34, 34, 34);
 }
+.rounded img{
+  object-fit: contain;
+  aspect-ratio: 3 / 2;
+}

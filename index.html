@@ -2,16 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-59R3T9Z9');</script>
-  <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="description"
     content="Explore our 3D virtual solar system and learn about planets in an interactive space exploration.">
@@ -30,35 +20,7 @@
     content="virtual galaxy, planets, ISS, probes, dwarf planets, solar system, information, space exploration">
   <link rel="canonical" href="https://www.virtual-galaxy.netlify.app/">
   <meta property="og:title" content="Virtual Galaxy - Explore Planets, ISS, Probes, Dwarf Planets, and Solar System">
-  <meta property="og:description"
-    content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
-  <!-- open graph -->
-  <meta property="og:image" content="https://www.virtual-galaxy.netlify.app/images/og-image.jpg">
-  <meta property="og:url" content="https://www.virtual-galaxy.netlify.app/">
-  <meta property="og:type" content="website">
-  <meta name="referrer" content="no-referrer">
-  <meta name="robots" content="noindex, nofollow">
-  <!-- twitter card meta  -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@SaikatD04702748">
-  <meta name="twitter:title" content="Virtual Galaxy - Explore Planets, ISS, Probes, Dwarf Planets, and Solar System">
-  <meta name="twitter:description"
-    content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
-  <meta name="twitter:image" content="https://www.virtual-galaxy.netlify.app/images/twitter-card-image.jpg">
-  <meta name="language" content="English">
-  <meta name="geo.region" content="+91">
-  <meta name="geo.placename" content="Kolkata, West Bengal">
-  <meta name="geo.position" content="22.644328795112212; 88.37685298914653">
-  <meta name="ICBM" content="Latitude, Longitude">
-  <meta name="msvalidate.01" content="Your-Bing-Verification-Code">
-  <meta name="yandex-verification" content="Your-Yandex-Verification-Code">
-  <meta name="news_keywords" content="virtual galaxy, planets, ISS, probes, dwarf planets, solar system">
-  <meta name="article:published_time" content="2023-07-25T12:34:56Z">
-  <meta name="article:modified_time" content="2023-07-25T15:00:00Z">
-  <meta name="article:author" content="Saikat Das, Rahul Das">
-  <meta name="article:section" content="Science">
-  <meta name="rating" content="adult">
-  <!-- <meta http-equiv="refresh" content="60"> -->
+  <meta property="og:description" content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
 
 
 
@@ -67,13 +29,14 @@
   <!-- importing bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- font awesome icons script-->
+  
+    <!-- font awesome icons script-->
   <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
+
   <!-- importing aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- Importing fontawesome icons -->
-  <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
+
   <!-- calling our style -->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" href="css/responsiveness.css" type="text/css" />
@@ -102,16 +65,12 @@
 
 
 <!-- loader  -->
+<div id="box">
   <div id="preloader"></div>
+  <h3> This may take a while </h3>
+</div>
   <!-- loader end -->
   
-  
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R3T9Z9" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-
 
 
 
@@ -120,7 +79,7 @@
     <nav class="navbar-top">
       <div class="navbar-logo-and-text">
         <div class="navbar-img">
-          <img src="img/logo.png" alt="Logo" width="80px">
+          <img src="img/logo.png" alt="Logo">
         </div>
         <div class="navbar-txt">
           <a href="index.html">GOAT Elitte Coders</a>
@@ -160,11 +119,6 @@
 
 
 
-
-  <!-- first body section (landing page) -->
-  <!-- <section class="body-start">
-  <img src="img/bg.jpg" alt="" srcset="">
-</section> -->
 
   <section id="hero" class="firstsection">
     <button class="glassdoor-btn" id="startButton" onclick="openRocket()">
@@ -239,29 +193,7 @@
           <button class="readmore-btn">Read More</button>
         </div>
       </div>
-
-
-
-      <!-- <div class="cards" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-        data-aos-duration="500">
-        <div class="cards-img">
-          <img src="/img/spiral-galaxy.jpg" alt="img" />
-        </div>
-        <div class="cards-text">
-          <h2>Spiral Galaxy</h2>
-          <p>
-            A spiral galaxy is a vast cosmic structure characterized by spiral
-            arms extending from a central nucleus. These mesmerizing
-            formations contain billions of stars, dust, and gas, showcasing
-            the captivating beauty of the universe.
-          </p>
-          <button class = "readmore-btn">Read More</button>
-        </div>
-      </div> -->
-
-
     </div>
-
 
     <button class="loadmore-btn">Load More...</button>
 
@@ -344,7 +276,7 @@
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2188.3669594199605!2d88.41663109062866!3d22.71411824077823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f899496b04114f%3A0x44c94509fa83f16a!2sELITTE%20COLLEGE!5e0!3m2!1sen!2sin!4v1689705253867!5m2!1sen!2sin"
               style="border:0; width: 100%; height: 300px;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              referrerpolicy="no-referrer-when-downgrade" title="Google map location"></iframe>
             <div class="sec2addr">
               <p>PO: Karnamadhabpur, PS: Ghola, Sodepur, Kolkata - 700113</p>
               <p><span class="collig">Phone :</span> +91 1234567890</p>
@@ -356,7 +288,7 @@
             <div class="sec2innercont">
             </div>
             <div class="sec2contactform">
-              <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+              <h2 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
               <form action="https://formspree.io/f/xvojgznn" method="POST">
                 <div class="clearfix">
                   <input class="col2 first" type="text" placeholder="Name" required autocomplete="off">
@@ -427,10 +359,10 @@
             <h4>Our Services</h4>
             <ul>
               <li>
-                <i class="fa-solid fa-angle-right"></i> <a href="#">3D Models</a>
+                <i class="fa-solid fa-angle-right"></i> <a href="/planets/planets.html">3D Models</a>
               </li>
               <li>
-                <i class="fa-solid fa-angle-right"></i><a href="#">Planets</a>
+                <i class="fa-solid fa-angle-right"></i><a href="/planets/planets.html">Planets</a>
               </li>
               <li>
                 <i class="fa-solid fa-angle-right"></i> <a href="#">Information</a>
@@ -450,7 +382,7 @@
                 <i class="fa-solid fa-angle-right"></i><a href="#achievement">Accomplishments</a>
               </li>
               <li>
-                <i class="fa-solid fa-angle-right"></i> <a href="#faq">FAQ</a>
+                <i class="fa-solid fa-angle-right"></i> <a href="/FAQ//faq.html">FAQ</a>
               </li>
             </ul>
           </div>
@@ -481,7 +413,7 @@
           <i class="fa-brands fa-linkedin"></i>
         </a>
         </a>
-        <a href="https://github.com/Git21221/IBMSkillsBuild" target="_blank" class="github">
+        <a href="https://github.com/Git21221/IBMSkillsBuild" target="_blank" class="git-link">
           <i class="fa-brands fa-github"></i></a>
       </div>
       <div class="me-md-auto text-md-start crMod">
@@ -500,22 +432,14 @@
 
   <!-- scroll to top image  -->
   <a href="#hero" class="scroll-top">
-    <img src="img/scroll-img.png" alt="scrollTotopimage" width="80px" />
+    <img src="img/scroll-img.png" alt="scrollTotopimage">
   </a>
   <!-- scroll to top image(close)  -->
 
 
 
   <!-- bootstrap js library -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
   <!-- aos scroll animation libary cdn -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

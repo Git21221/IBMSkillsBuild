@@ -1,222 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/css/responsiveness.css" type="text/css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQ</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-  <link rel="stylesheet" href="css/faq.css" />
-  <link rel="stylesheet" href="/css/style.css" type="text/css" />
-  <link rel="stylesheet" href="/css/responsiveness.css" type="text/css" />
+    <!-- link for fabicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/icon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- link for fabicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png" />
-  <link rel="manifest" href="/icon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+    <!-- Importing fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/bf915a8f75.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- Importing fontawesome icons -->
-  <script src="https://kit.fontawesome.com/bf915a8f75.js" defer crossorigin="anonymous"></script>
-</head>
-
-
-<body>
-  <!-- <div class="tenor-gif-embed" data-postid="21140992" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/loading-splash-gif-21140992">Loading Splash GIF</a>from <a href="https://tenor.com/search/loading-gifs">Loading GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
-  <nav class="navbar-top">
-    <div class="navbar-logo-and-text">
-      <div class="navbar-img">
-        <img src="/img/logo.png" alt="Logo" width="80px" />
-      </div>
-      <div class="navbar-txt">
-        <a href="index.html">GOAT Elitte Coders</a>
-      </div>
-    </div>
-    <a class="icon">
-      <i class="fa-solid fa-bars" id="activei"></i>
-    </a>
-    <div class="navbar-links" id="navbar-link-toogle">
-      <a href="/sec-page/second.html" title="View Our Solar System">
-        <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
-          <circle class="sun" cx="16" cy="16" r="3.2" />
-          <g class="third">
-            <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-            <circle cx="28.2" cy="23.1" r="1.7" />
-          </g>
-          <g class="second">
-            <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-            <circle cx="10.6" cy="7.2" r="1.7" />
-          </g>
-          <g class="first">
-            <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
-            <circle cx="11.7" cy="21" r="1.7" />
-          </g>
-        </svg>
-      </a>
-      <a class="navbar-links-txt" href="/index.html">Home</a>
-      <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
-      <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
-      <a class="navbar-links-txt highlight" href="#faq">FAQ</a>
-      <a class="navbar-links-txt" href="/404 page/index.html">Sign</a>
-    </div>
-  </nav>
-  </div>
-
-  <div class="faq-sec">
-    <h2>FAQ's</h2>
-    <div class="faq">
-      <div class="question">
-        <h3>How big is the universe ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          The observable universe is estimated to be about 93 billion light-years in diameter, constantly expanding
-          since the Big Bang.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3>What is a black hole ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          A black hole is an area in space with incredibly strong gravity that nothing, not even light, can escape from.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3>What causes the Northern Lights ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          The Northern Lights, or Aurora Borealis, are caused by charged particles from the sun colliding with Earth's
-          atmosphere, creating beautiful light displays.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3> Is there life on other planets ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          The search for extraterrestrial life continues, but there is no definitive evidence yet. Scientists explore
-          Mars and moons for potential habitability.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3>What is a supernova ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          A supernova is an explosive event that occurs when a massive star reaches the end of its life cycle, releasing
-          an enormous amount of energy.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3>How do astronauts eat and drink in space ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          Astronauts eat specially prepared and packaged food. They drink liquids from pouches with straws to prevent
-          spills in microgravity.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3> What are the hottest and coldest planets in our solar system ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          Venus is the hottest planet, with surface temperatures around 900 degrees Fahrenheit (475 degrees Celsius),
-          while Neptune is the coldest, with temperatures as low as -330 degrees Fahrenheit (-200 degrees Celsius).
-        </p>
-      </div>
+  <body>
+    <div>
+      <nav class="navbar-top">
+        <div class="navbar-logo-and-text">
+          <div class="navbar-img">
+            <img src="/img/logo.png" alt="Logo" width="80px" />
+          </div>
+          <div class="navbar-txt">
+            <a href="index.html">GOAT Elitte Coders</a>
+          </div>
+        </div>
+        <a class="icon">
+          <i class="fa-solid fa-bars" id="activei"></i>
+        </a>
+        <div class="navbar-links" id="navbar-link-toogle">
+          <a href="/sec-page/second.html" title="View Our Solar System">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="orrery"
+              enable-background="new 0 0 32 32"
+              viewBox="0 0 32 32"
+            >
+              <circle class="sun" cx="16" cy="16" r="3.2" />
+              <g class="third">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="14"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width=".9"
+                />
+                <circle cx="28.2" cy="23.1" r="1.7" />
+              </g>
+              <g class="second">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="10.5"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width=".9"
+                />
+                <circle cx="10.6" cy="7.2" r="1.7" />
+              </g>
+              <g class="first">
+                <circle
+                  cx="16"
+                  cy="16"
+                  r="6.8"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-miterlimit="10"
+                  stroke-width=".9"
+                />
+                <circle cx="11.7" cy="21" r="1.7" />
+              </g>
+            </svg>
+          </a>
+          <a class="navbar-links-txt" href="/index.html">Home</a>
+          <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
+          <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
+          <a class="navbar-links-txt highlight" href="#faq">FAQ</a>
+          <a class="navbar-links-txt" href="/404 page/index.html">Sign</a>
+        </div>
+      </nav>
     </div>
 
-    <div class="faq">
-      <div class="question">
-        <h3>What is the Hubble Space Telescope used for ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
+    <div class="faq-sec">
+      <h2>FAQ's</h2>
+      <div class="faq">
+        <div class="question">
+          <h3>How big is the universe ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            The observable universe is estimated to be about 93 billion
+            light-years in diameter, constantly expanding since the Big Bang.
+          </p>
+        </div>
       </div>
-      <div class="answer">
-        <p>
-          The Hubble Space Telescope is used to observe distant galaxies, stars, and planets, providing valuable data
-          for astronomers and space researchers.
-        </p>
+
+      <div class="faq">
+        <div class="question">
+          <h3>What is a black hole ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            A black hole is an area in space with incredibly strong gravity that
+            nothing, not even light, can escape from.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>What causes the Northern Lights ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            The Northern Lights, or Aurora Borealis, are caused by charged
+            particles from the sun colliding with Earth's atmosphere, creating
+            beautiful light displays.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Is there life on other planets ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            The search for extraterrestrial life continues, but there is no
+            definitive evidence yet. Scientists explore Mars and moons for
+            potential habitability.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>What is a supernova ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            A supernova is an explosive event that occurs when a massive star
+            reaches the end of its life cycle, releasing an enormous amount of
+            energy.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>How do astronauts eat and drink in space ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Astronauts eat specially prepared and packaged food. They drink
+            liquids from pouches with straws to prevent spills in microgravity.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>
+            What are the hottest and coldest planets in our solar system ?
+          </h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Venus is the hottest planet, with surface temperatures around 900
+            degrees Fahrenheit (475 degrees Celsius), while Neptune is the
+            coldest, with temperatures as low as -330 degrees Fahrenheit (-200
+            degrees Celsius).
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>What is the Hubble Space Telescope used for ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            The Hubble Space Telescope is used to observe distant galaxies,
+            stars, and planets, providing valuable data for astronomers and
+            space researchers.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>How are planets formed ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            Planets form from gas and dust particles in a rotating disk around a
+            young star, gradually accreting and growing over millions of years.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          <h3>Can humans survive in space without a spacesuit ?</h3>
+          <i class="fa-solid fa-angle-down icon"></i>
+        </div>
+        <div class="answer">
+          <p>
+            No, humans cannot survive in the vacuum of space without a
+            spacesuit, as they need protection from extreme temperatures and
+            lack of air.
+          </p>
+        </div>
       </div>
     </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3>How are planets formed ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          Planets form from gas and dust particles in a rotating disk around a young star, gradually accreting and
-          growing over millions of years.
-        </p>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="question">
-        <h3> Can humans survive in space without a spacesuit ?</h3>
-        <i class="fa-solid fa-angle-down icon"></i>
-      </div>
-      <div class="answer">
-        <p>
-          No, humans cannot survive in the vacuum of space without a spacesuit, as they need protection from extreme
-          temperatures and lack of air.
-        </p>
-      </div>
-    </div>
-
-  </div>
-  <script src="/js/script.js"></script>
-  <script>
-    var faqs = document.querySelectorAll(".faq");
-
-    faqs.forEach((faq) => {
-      faq.addEventListener("click", () => {
-        faq.classList.toggle("active");
-      });
-    });
-  </script>
-</body>
-
+    <script src="js/faq.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
