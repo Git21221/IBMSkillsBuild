@@ -678,6 +678,7 @@ select:focus {
   fill: #fff;
   height: 50px;
   width: 50px;
+  margin: 0 10px;
 }
 
 #orrery>.first,
