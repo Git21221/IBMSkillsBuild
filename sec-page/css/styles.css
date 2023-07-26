@@ -87,6 +87,7 @@ video {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 article,
@@ -137,9 +138,9 @@ table {
 
 body {
   font-size: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  background-color: #08090A;
+  background-color: #08090a;
 }
 
 #universe {
@@ -156,7 +157,7 @@ body {
 #galaxy {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 120%;
   /*perspective: 4000;*/
 }
 
@@ -171,7 +172,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.479);
   border-radius: 50%;
   transform-style: preserve-3d;
   animation-name: orbit;
@@ -211,7 +212,7 @@ body {
 }
 
 #sun {
-  background-color: #FB7209;
+  background-color: #fb7209;
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
@@ -245,7 +246,7 @@ body {
 #saturn .ring:after {
   border-radius: 50%;
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   width: 2.2em;
@@ -863,129 +864,129 @@ body {
 /* --------------------------------------------------------------------------- text infos data */
 /* --------------------------------------------------------------------------- speed */
 .set-speed dl.infos dd span:after {
-  content: 'Orbit Velocity';
+  content: "Orbit Velocity";
 }
 
 .set-speed #sun dl.infos dd:after {
-  content: '0 km/h';
+  content: "0 km/h";
 }
 
 .set-speed #mercury dl.infos dd:after {
-  content: '170,503 km/h';
+  content: "170,503 km/h";
 }
 
 .set-speed #venus dl.infos dd:after {
-  content: '126,074 km/h';
+  content: "126,074 km/h";
 }
 
 .set-speed #earth dl.infos dd:after {
-  content: '107,218 km/h';
+  content: "107,218 km/h";
 }
 
 .set-speed #mars dl.infos dd:after {
-  content: '86,677 km/h';
+  content: "86,677 km/h";
 }
 
 .set-speed #jupiter dl.infos dd:after {
-  content: '47,002 km/h';
+  content: "47,002 km/h";
 }
 
 .set-speed #saturn dl.infos dd:after {
-  content: '34,701 km/h';
+  content: "34,701 km/h";
 }
 
 .set-speed #uranus dl.infos dd:after {
-  content: '24,477 km/h';
+  content: "24,477 km/h";
 }
 
 .set-speed #neptune dl.infos dd:after {
-  content: '19,566 km/h';
+  content: "19,566 km/h";
 }
 
 /* --------------------------------------------------------------------------- size */
 .set-size dl.infos dd span:after {
-  content: 'Equatorial Circumference';
+  content: "Equatorial Circumference";
 }
 
 .set-size #sun dl.infos dd:after {
-  content: '4,370,005 km';
+  content: "4,370,005 km";
 }
 
 .set-size #mercury dl.infos dd:after {
-  content: '15,329 km';
+  content: "15,329 km";
 }
 
 .set-size #venus dl.infos dd:after {
-  content: '38,024 km';
+  content: "38,024 km";
 }
 
 .set-size #earth dl.infos dd:after {
-  content: '40,030 km';
+  content: "40,030 km";
 }
 
 .set-size #mars dl.infos dd:after {
-  content: '21,296 km';
+  content: "21,296 km";
 }
 
 .set-size #jupiter dl.infos dd:after {
-  content: '439,263 km';
+  content: "439,263 km";
 }
 
 .set-size #saturn dl.infos dd:after {
-  content: '365,882 km';
+  content: "365,882 km";
 }
 
 .set-size #uranus dl.infos dd:after {
-  content: '159,354 km';
+  content: "159,354 km";
 }
 
 .set-size #neptune dl.infos dd:after {
-  content: '154,704 km';
+  content: "154,704 km";
 }
 
 /* --------------------------------------------------------------------------- distance */
 .set-distance dl.infos dd span:after {
-  content: 'From Sun';
+  content: "From Sun";
 }
 
 .set-distance #sun dl.infos dd span:after {
-  content: 'From Earth';
+  content: "From Earth";
 }
 
 .set-distance #sun dl.infos dd:after {
-  content: '149,598,262 km';
+  content: "149,598,262 km";
 }
 
 .set-distance #mercury dl.infos dd:after {
-  content: '57,909,227 km';
+  content: "57,909,227 km";
 }
 
 .set-distance #venus dl.infos dd:after {
-  content: '108,209,475 km';
+  content: "108,209,475 km";
 }
 
 .set-distance #earth dl.infos dd:after {
-  content: '149,598,262 km';
+  content: "149,598,262 km";
 }
 
 .set-distance #mars dl.infos dd:after {
-  content: '227,943,824 km';
+  content: "227,943,824 km";
 }
 
 .set-distance #jupiter dl.infos dd:after {
-  content: '778,340,821 km';
+  content: "778,340,821 km";
 }
 
 .set-distance #saturn dl.infos dd:after {
-  content: '1,426,666,422 km';
+  content: "1,426,666,422 km";
 }
 
 .set-distance #uranus dl.infos dd:after {
-  content: '2,870,658,186 km';
+  content: "2,870,658,186 km";
 }
 
 .set-distance #neptune dl.infos dd:after {
-  content: '4,498,396,441 km';
+  content: "4,498,396,441 km";
 }
 
 /* --------------------------------------------------------------------------- planets starting position and lighting effect */
@@ -1421,7 +1422,7 @@ dl.infos {
 
 dl.infos:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 30px;
   left: 15px;
@@ -1438,7 +1439,7 @@ dl.infos dt {
   left: 50px;
   margin-bottom: 26px;
   bottom: 30px;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   text-shadow: 1px 1px 2px black;
 }
@@ -1448,7 +1449,7 @@ dl.infos dd:after {
   left: 50px;
   bottom: 30px;
   width: 300px;
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
   text-shadow: 1px 1px 2px black;
 }
@@ -1458,7 +1459,7 @@ dl.infos dd span:after {
   left: 50px;
   bottom: 14px;
   width: 300px;
-  color: #FFF;
+  color: #fff;
   font-size: 11px;
   text-shadow: 1px 1px 2px black;
 }
@@ -1485,7 +1486,7 @@ dl.infos dd span:after {
 .saturn #saturn.orbit,
 .uranus #uranus.orbit,
 .neptune #neptune.orbit {
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 4px solid rgb(255, 255, 255);
 }
 
 .hide-UI h1,
@@ -1509,7 +1510,7 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
 }
 
 #navbar,
@@ -1521,17 +1522,18 @@ h1 {
 #navbar {
   z-index: 99;
   position: absolute;
-  top: 0;
+  top: 90px;
   left: 0;
-  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 48px;
 }
 
 #navbar a,
 #data a,
 #controls label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
   display: block;
   position: relative;
   text-decoration: none;
@@ -1540,15 +1542,14 @@ h1 {
 #navbar a:hover,
 #data a:hover,
 #controls label:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 #data a.active {
-  color: #0CF;
+  color: #0cf;
 }
 
 #navbar a {
-  position: absolute;
   top: 0;
   height: 48px;
   padding: 16px;
@@ -1568,7 +1569,7 @@ h1 {
   z-index: 99;
   position: fixed;
   opacity: 1;
-  top: 49px;
+  top: 140px;
   padding: 16px;
 }
 
@@ -1595,7 +1596,7 @@ h1 {
 }
 
 #controls label {
-  opacity: .6;
+  opacity: 0.6;
   height: 24px;
   margin-bottom: 28px;
 }
@@ -1611,7 +1612,7 @@ h1 {
   height: 20px;
   margin-top: 3px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   z-index: 99;
 }
 
@@ -1620,7 +1621,7 @@ h1 {
   margin-left: 36px;
   padding-top: 4px;
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
 }
 
 #controls input {
@@ -1629,48 +1630,55 @@ h1 {
 }
 
 #controls input[type="radio"]:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
+  top: 7px;
   width: 22px;
   height: 22px;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   border-radius: 16px;
+  transition: 0.3s linear;
 }
 
 #controls input:checked[type="radio"]:after {
-  content: '';
+  content: "";
   display: block;
-  top: 3px;
+  top: 10px;
   margin-left: 3px;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   z-index: 99;
+  transition: 0.3s linear;
 }
 
 #controls input[type="checkbox"]:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 22px;
-  border: 2px solid #FFF;
+  left: 30px;
+  border: 2px solid #fff;
   border-radius: 16px;
+  transition: 0.3s linear;
 }
 
 #controls input[type="checkbox"]:after {
-  content: '';
+  content: "";
   display: block;
   top: 3px;
+  left: 30px;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   z-index: 99;
+  transition: 0.3s linear;
 }
 
 #controls label.set-view:before {
@@ -1678,12 +1686,12 @@ h1 {
 }
 
 .view-3D #controls label.set-view:before {
-  content: '2D';
+  content: "2D";
   margin-left: 82px;
 }
 
 .view-2D #controls label.set-view:before {
-  content: '3D';
+  content: "3D";
   margin-left: 7px;
 }
 
@@ -1692,7 +1700,7 @@ h1 {
 }
 
 .view-2D #controls .set-view input:after {
-  margin-left: 81px;
+  margin-left: 31px;
 }
 
 #controls label.set-zoom:before {
@@ -1700,12 +1708,12 @@ h1 {
 }
 
 .zoom-large #controls label.set-zoom:before {
-  content: '+';
+  content: "+";
   margin-left: 82px;
 }
 
 .zoom-close #controls label.set-zoom:before {
-  content: '-';
+  content: "-";
   margin-left: 7px;
 }
 
@@ -1714,7 +1722,7 @@ h1 {
 }
 
 .zoom-close #controls .set-zoom input:after {
-  margin-left: 81px;
+  margin-left: 31px;
 }
 
 /* --------------------------------------------------------------------------- transitions */
@@ -1727,7 +1735,8 @@ h1 {
 .planet,
 .satelite,
 .ring {
-  transition-property: width, height, top, left, margin-left, margin-top, webkit-transform;
+  transition-property: width, height, top, left, margin-left, margin-top,
+    webkit-transform;
 }
 
 #sun,
@@ -1744,7 +1753,7 @@ h1 {
 .ring,
 .infos,
 .icon {
-  transition-duration: .8s;
+  transition-duration: 0.8s;
   transition-timing-function: ease-in-out;
 }
 
@@ -1784,16 +1793,16 @@ h1,
 #data,
 #controls {
   transition-property: opacity, margin;
-  transition-duration: .8s;
+  transition-duration: 0.8s;
   transition-timing-function: ease-in-out;
 }
 
 h1 {
-  transition-delay: .35s;
+  transition-delay: 0.35s;
 }
 
 #data {
-  transition-delay: .7s;
+  transition-delay: 0.7s;
 }
 
 #controls {
@@ -1805,7 +1814,6 @@ body {
   background-image: url("../img/stars.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 @media (max-width: 1950px) {
@@ -1913,7 +1921,7 @@ body {
 
   #controls {
     padding-right: 32px;
-    top: 12px;
+    top: 80px;
   }
 
   #data {

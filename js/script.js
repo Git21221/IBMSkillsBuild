@@ -1,3 +1,47 @@
+
+const loader = document.getElementById("preloader");
+
+window.addEventListener("load", () => {
+  loader.style.display = 'none';
+})
+
+
+// navbar triggering
+
+
+function toggleMenu() {
+  var navbarLinks = document.getElementById("navbar-link-toogle");
+  document.getElementById("activei").classList.toggle("fa-xmark");
+  navbarLinks.classList.toggle("activei");
+}
+
+// Function to close the menu when a link is clicked
+function closeMenu() {
+  var navbarLinks = document.getElementById("navbar-link-toogle");
+  navbarLinks.classList.remove("activei");
+}
+
+// Attach an event listener to the menu icon
+document.querySelector(".icon").addEventListener("click", toggleMenu);
+
+// Attach an event listener to each navigation link to close the menu when a link is clicked
+var navLinks = document.getElementsByClassName("navbar-links-txt");
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", closeMenu);
+}
+
+
+// window.addEventListener("resize", () => {
+
+  // console.log(window.innerWidth);
+  if(window.innerWidth < 856){
+    var act = document.getElementById("navbar-link-toogle");
+    act.style["margin-left"] =  window.innerWidth - 172 + "px";
+  }
+// })
+
+
+
 function openRocket() {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "/rocket.html", true);

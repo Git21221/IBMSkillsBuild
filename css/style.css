@@ -1,30 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900;1000&display=swap");
 
-
 * {
-	margin:0px;
-	padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
 
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#preloader{
+  position: fixed;
+	height: 100vh;
+	width: 100%;
+	background: url(/img/SVKl.gif) no-repeat black;
+	background-size: 20%;
+	background-position: center;
+  z-index: 99999999;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
 
+.clearfix:after {
+  clear: both;
+}
 
-html{
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
-  background-color: #000000;
+  font-display: optional;
+  background-color: rgb(8, 8, 8);
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+  color: #d8d8d8;
+  transition: 0.3s ease-in-out;
+}
 
+a:hover {
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
 
 /* ========== Navbar style ============== */
 .navbar-top {
@@ -33,10 +69,10 @@ body {
   align-items: center;
   position: fixed;
   color: #fff;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(8, 8, 8);
+  box-shadow: 1px 1px 20px rgb(116, 116, 116);
   width: 100%;
-  /* top:0; */
-  z-index: 9999999999;
+  z-index: 99999;
 }
 
 .navbar-logo-and-text {
@@ -46,15 +82,15 @@ body {
   font-size: 1.2rem;
 }
 
-.navbar-logo-and-text img {
-  width: 80px;
-}
-
 .navbar-links {
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
   align-items: center;
   padding: 0 30px;
+}
+
+.icon #activei {
+  display: none;
 }
 
 .navbar-links-txt {
@@ -66,36 +102,34 @@ body {
   transition: 0.3s linear;
 }
 
-.navbar-links-txt:hover {
+.navbar-links-txt:hover, .highlight {
   background-color: #fff;
   color: black;
   transition: 0.3s linear;
   text-decoration: none;
 }
-.fa-solid{
-  display: none;
-}
+
+
 /* ========== Navbar style done ============== */
 
-
-
-
 /* ==============explore galaxy btn =============*/
-.body-start{
+.body-start {
   position: relative;
-  top:80px;
+  top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.body-start img{
+
+.body-start img {
   width: 100%;
   height: auto;
 }
+
 #hero {
   height: 100vh;
-  /* background-image: url(/img/bg.jpg); */
+  background-image: url("/img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -104,7 +138,10 @@ body {
   justify-content: center;
 }
 
-
+.video video {
+  width: 100%;
+  height: auto;
+}
 
 /* ======= Button style ======= */
 .glassdoor-btn {
@@ -116,9 +153,9 @@ body {
   padding: 1rem 2rem;
   font-size: 19px;
   border-radius: 900px;
-  color: #000000;
+  color: #010042;
   background-color: transparent;
-  background-color: rgb(255, 255, 255);
+  background-color: #cae8ff;
   border: none;
   cursor: pointer;
   transition: 0.3s linear;
@@ -126,18 +163,22 @@ body {
 
 .glassdoor-btn:hover {
   transition: 0.3s linear;
-  box-shadow: 5px 5px 20px black;
+  color: white;
+  background: linear-gradient(135deg, #c06dff, #76d3ff);
+  box-shadow: 20px 20px 200px rgb(126, 0, 199),
+    -20px -20px 200px rgb(126, 0, 199), -20px -20px 200px rgb(126, 0, 199),
+    20px 20px 200px rgb(126, 0, 199);
 }
 
 /* =============   second section start here ============= */
 
 .section-on-body {
   margin-top: 100px;
-  background-color: #010109;
+  background-color: rgb(8, 8, 8);
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 4rem;
+  row-gap: 1.5rem;
 }
 
 .section-on-body-headings {
@@ -158,13 +199,14 @@ body {
 
 /* =============   Third section start here ============= */
 
-
-#cards-wrapper{
+#cards-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 80px;
+  margin-bottom: 50px;
 }
+
 .cards {
   width: 320px;
   height: 580px;
@@ -194,14 +236,16 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  text-align:justify;
+  text-align: justify;
   height: calc(550px - 34px - 200px);
 }
-.cards-text>h2{
+
+.cards-text > h2 {
   color: #d1d1d1;
   font-size: 1.5rem;
 }
-.cards-text>p {
+
+.cards-text > p {
   font-size: 18px;
 }
 
@@ -255,7 +299,7 @@ body {
   column-gap: 50px;
 }
 
-#exploreleft-img{
+#exploreleft-img {
   display: flex;
   position: relative;
   align-items: center;
@@ -266,7 +310,7 @@ body {
 
 #exploreleft-img img {
   border-radius: 10px;
-  width: 75%;
+  width: 85%;
   height: 100%;
 }
 
@@ -277,134 +321,145 @@ body {
   width: 500px;
 }
 
-#exploreright-txt>p {
+#exploreright-txt > p {
   padding-bottom: 20px;
 }
 
 /* =============== galery start here============= */
 
-.col-sm{
+.col-sm {
   display: flex;
   justify-content: center;
 }
 
-.img{
+.img {
   width: 300px;
   border-radius: 20px;
   box-shadow: 1px 3px 10px rgb(235, 235, 235);
 }
 
 /* ============== contact ================ */
-input:focus, textarea:focus, keygen:focus, select:focus {
-	outline: none;
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus {
+  outline: none;
 }
+
 ::-moz-placeholder {
-	color: #666;
-	font-weight: 300;
-	opacity: 1;
+  color: #666;
+  font-weight: 300;
+  opacity: 1;
 }
 
 ::-webkit-input-placeholder {
-	color: #0a0a0a;
-	font-weight: 300;
+  color: #0a0a0a;
+  font-weight: 300;
 }
-
 
 /* Contact Form Styling */
 
 .textcenter {
-	text-align: center;
-}
-.section1 {
-	text-align: center;
-	display: table;
-	width: 100%;
-}
-.section1 .shtext {
-	display: block;
-	margin-top: 20px;
-}
-.section1 .seperator {
-	border-bottom:1px solid #d3d3d3;
-	width: 35px;
-	display: inline-block;
-	margin: 20px;
+  text-align: center;
 }
 
+.section1 {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+
+.section1 .shtext {
+  display: block;
+  margin-top: 20px;
+}
+
+.section1 .seperator {
+  border-bottom: 1px solid #d3d3d3;
+  width: 35px;
+  display: inline-block;
+  margin: 20px;
+}
 
 .section2 {
-    width: 1200px;
-    margin: 25px auto;
+  width: 1200px;
+  margin: 25px auto;
 }
+
 .section2 .col2 {
-	width: 48.71%;
+  width: 48.71%;
 }
+
 .section2 .col2.first {
-	float: left;
+  float: left;
 }
+
 .section2 .col2.last {
-	float: right;
+  float: right;
 }
+
 .section2 .col2.column2 {
-	padding: 0 30px;
+  padding: 0 30px;
 }
+
 .section2 span.collig {
-	color: #e2e2e2;
-	margin-right: 10px;
-	display: inline-block;
+  color: #e2e2e2;
+  margin-right: 10px;
+  display: inline-block;
 }
+
 .section2 .sec2addr {
-	display: block;
-	line-height: 26px;
+  display: block;
+  line-height: 26px;
 }
+
 .section2 .sec2addr p {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
   color: #a5a5a5;
 }
-.section2 .sec2contactform input[type="text"], 
+
+.section2 .sec2contactform input[type="text"],
 .section2 .sec2contactform input[type="email"],
 .section2 .sec2contactform textarea {
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 30px;
-    background: #e2e2e2;
-    margin: 7px 0;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 30px;
+  background: #e2e2e2;
+  margin: 7px 0;
 }
+
 .section2 .sec2contactform textarea {
-	width: 100%;
-	display: block;
-	color: #000000;
-  resize:none;
+  width: 100%;
+  display: block;
+  color: #000000;
+  resize: none;
 }
 
 .section2 .sec2contactform h3 {
-	font-weight: normal;
-    margin: 20px 0;
-    margin-top: 30px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 19px;
-    color: #d1d1d1;
+  font-weight: normal;
+  margin: 20px 0;
+  margin-top: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 19px;
+  color: #d1d1d1;
 }
 
 /* @media querries */
 
-
 /* ==========scroll to  top========= */
 .scroll-top {
   position: fixed;
-  bottom: 3rem;
+  bottom: 1rem;
   right: 1rem;
   z-index: 1000;
 }
 
 .scroll-top img {
-  width: 8rem;
   animation: float 3s linear infinite;
   transition: transform 0.5s ease;
 }
 
 @keyframes float {
-
   100%,
   0% {
     transform: translateY(0rem);
@@ -417,147 +472,178 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 /* ==================css for loader=============== */
 
-
-
 /*================= footer section start here ============= */
 #footer {
-  background: linear-gradient(to right, #00093c, #2d0b00);
-  color: #fff;
-  border-top-left-radius: 125px;
-  font-size: 18px;
-  line-height: 20px;
-  padding: 50px 0 30px;
-  margin-top: 200px;
+  background: rgb(34, 34, 34);
+  color: #d1d1d1;
+  font-size: 14px;
+  margin-top: 50px;
 }
 
 .row {
-  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+  row-gap: 30px;
+}
+
+.modifiedFooterTop {
+  padding: 20px 0;
+}
+
+.modifyRow {
+  align-items: flex-start;
+}
+
+.footer-contact {
+  padding-top: 50px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  column-gap: 20px;
-  row-gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 15px;
 }
 
-.col {
-  flex-basis: 25%;
-  padding: 10px;
+#footer .footer-top .footer-contact ul a {
+  color: #aaaaaa;
+  transition: 0.3s linear;
+  display: inline-block;
+  line-height: 1;
 }
 
-.col:nth-child(2),
-.col:nth-child(2) {
-  flex-basis: 15%;
-}
-
-.col h3 {
-  width: fit-content;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-.email-id {
-  width: fit-content;
-  border-bottom: 1px solid #ccc;
-  margin: 20px 0;
-}
-
-.col > ul li {
-  list-style: none;
-  margin-bottom: 12px;
-}
-
-.col > ul li > a {
+#footer .footer-top .footer-contact ul a:hover {
   text-decoration: none;
   color: white;
+  font-weight: 600;
 }
 
-.footer-from {
-  padding-bottom: 15px;
+#footer .footer-top .footer-contact ul li {
+  padding: 10px 0;
+  display: flex;
+  column-gap: 10px;
+  font-size: 1.09rem;
+  align-items: center;
+}
+
+#footer .footer-top .footer-contact ul i {
+  color: #ebebeb;
+}
+
+#footer .footer-top .container h4::after {
+  content: "";
+  top: 84px;
+  left: 15px;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #0056b3;
+}
+
+.modifiedFooter {
+  font-size: 1.09rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 50px;
+  flex-flow: row-reverse;
 }
 
-.footer-from .far {
-  font-size: 18px;
-  margin-right: 10px;
+.socialLinkMod {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
 }
 
-.footer-from input {
-  width: 100%;
-  background: transparent;
-  color: #ccc;
-  border: 0;
-  outline: none;
+.fa-whatsapp {
+  color: #03dd45;
 }
 
-.footer-from button {
-  background: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer;
+.fa-twitter {
+  color: #1da1f2;
 }
 
-.footer-from button .fas {
-  font-size: 16px;
-  color: #ccc;
+.fa-facebook {
+  color: #1877f2;
 }
 
-.social-icons .fab {
-  width: 40px;
-  height: 40px;
+.fa-instagram {
+  color: #e10289;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.fa-discord {
+  color: #404eed;
+}
+
+.fa-github {
+  color: #ffffff;
+}
+
+#footer .social-links a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  font-size: 22px;
-  color: #000;
-  margin-right: 15px;
-  cursor: pointer;
-  background-color: #ccc;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s linear;
 }
 
-hr {
-  width: 90%;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  margin: 20px auto;
+#footer .social-links a:hover {
+  transform: scale(1.2);
+  transition: 0.3s linear;
 }
 
-.copyright {
-  text-align: center;
+/* =====================css for navbar svg========================= */
+#orrery {
+  transform: rotateY(30deg) rotateX(50deg) rotateZ(0deg);
+  transform-origin: 50% 50%;
+  fill: #fff;
+  height: 50px;
+  width: 50px;
 }
 
-.underline {
-  width: 100%;
-  height: 5px;
-  background: #767676;
-  border-radius: 3px;
-  position: absolute;
-  top: 25px;
-  left: -10px;
-  margin: 10px;
-  overflow: hidden;
+#orrery >
+.first,
+.second,
+.third {
+  animation-name: spin;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transform-origin: 50% 50%;
 }
 
-.underline span {
-  width: 15px;
-  height: 100%;
-  background: #fff;
-  border-radius: 3px;
-  position: absolute;
-  top: 0;
-  left: 10px;
-  animation: moving 2s linear infinite;
+#orrery >.third {
+  animation-duration: 10s;
 }
 
-@keyframes moving {
-  0% {
-    left: -20px;
+#orrery >.second {
+  animation-duration: 6.2s;
+}
+
+#orrery >.first {
+  animation-duration: 2.4s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  100% {
-    left: 100%;
+
+  to {
+    transform: rotate(-360deg);
   }
 }

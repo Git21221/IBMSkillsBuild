@@ -2,12 +2,67 @@
 <html lang="en">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-59R3T9Z9');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
-  <meta name="description" content="3d-solar-system" />
-  <meta name="keywords" content="earth, space, moon, 3d-images 3d-animation" />
+  <meta name="description"
+    content="Explore our 3D virtual solar system and learn about planets in an interactive space exploration.">
+  <meta name="keywords"
+    content="earth, space, moon, 3d-images 3d-animation, planets, Solar System, Virtual Solar System, Planet Models, Astronomy Visualization,Space Exploration, Educational Space Simulation, Celestial Bodies, Planetary Orbits,Astronomy App,Astronomical Visualization,Space Educational Tool,Learn About Planets,Outer Space Simulation,Solar System Exploration,Astronomical Models,Space Learning Experience,Planetary System Viewer" />
   <meta name="author" content="GOAT Elitte Coders(Rahul Das, Saikat Das)" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>welcome to space</title>
+  <title>Virtual Galaxy - Explore planets</title>
+
+
+
+  <!-- SEO(Search engine optimization) -->
+  <meta name="description"
+    content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
+  <meta name="keywords"
+    content="virtual galaxy, planets, ISS, probes, dwarf planets, solar system, information, space exploration">
+  <link rel="canonical" href="https://www.virtual-galaxy.netlify.app/">
+  <meta property="og:title" content="Virtual Galaxy - Explore Planets, ISS, Probes, Dwarf Planets, and Solar System">
+  <meta property="og:description"
+    content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
+  <!-- open graph -->
+  <meta property="og:image" content="https://www.virtual-galaxy.netlify.app/images/og-image.jpg">
+  <meta property="og:url" content="https://www.virtual-galaxy.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- twitter card meta  -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@SaikatD04702748">
+  <meta name="twitter:title" content="Virtual Galaxy - Explore Planets, ISS, Probes, Dwarf Planets, and Solar System">
+  <meta name="twitter:description"
+    content="Explore the virtual galaxy with information about planets, ISS, probes, dwarf planets, and the solar system. Find fascinating details and facts about our cosmic neighbors.">
+  <meta name="twitter:image" content="https://www.virtual-galaxy.netlify.app/images/twitter-card-image.jpg">
+  <meta name="language" content="English">
+  <meta name="geo.region" content="+91">
+  <meta name="geo.placename" content="Kolkata, West Bengal">
+  <meta name="geo.position" content="22.644328795112212; 88.37685298914653">
+  <meta name="ICBM" content="Latitude, Longitude">
+  <meta name="msvalidate.01" content="Your-Bing-Verification-Code">
+  <meta name="yandex-verification" content="Your-Yandex-Verification-Code">
+  <meta name="news_keywords" content="virtual galaxy, planets, ISS, probes, dwarf planets, solar system">
+  <meta name="article:published_time" content="2023-07-25T12:34:56Z">
+  <meta name="article:modified_time" content="2023-07-25T15:00:00Z">
+  <meta name="article:author" content="Saikat Das, Rahul Das">
+  <meta name="article:section" content="Science">
+  <meta name="rating" content="adult">
+  <!-- <meta http-equiv="refresh" content="60"> -->
+
+
+
+
 
   <!-- importing bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -17,6 +72,8 @@
   <!-- importing aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- Importing fontawesome icons -->
+  <script src="https://kit.fontawesome.com/bf915a8f75.js" crossorigin="anonymous"></script>
   <!-- calling our style -->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" href="css/responsiveness.css" type="text/css" />
@@ -42,7 +99,18 @@
 </head>
 
 <body>
-  <!-- loader -->
+
+
+<!-- loader  -->
+  <div id="preloader"></div>
+  <!-- loader end -->
+  
+  
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59R3T9Z9" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
 
 
 
@@ -52,18 +120,38 @@
     <nav class="navbar-top">
       <div class="navbar-logo-and-text">
         <div class="navbar-img">
-          <img src="img/logo.png" alt="Logo">
+          <img src="img/logo.png" alt="Logo" width="80px">
         </div>
         <div class="navbar-txt">
-          GOAT Elitte Coders
+          <a href="index.html">GOAT Elitte Coders</a>
         </div>
       </div>
-      <div class="navbar-links">
-        <a class="navbar-links-txt" href="index.html">Home</a>
-        <a class="navbar-links-txt" href="#">Planets</a>
-        <a class="navbar-links-txt" href="#">FAQ</a>
-        <a class="navbar-links-txt" href="UI/Register.html">Sign</a>
-        <i class="fa-solid fa-bars active"></i>
+      <a class="icon">
+        <i class="fa-solid fa-bars" id="activei"></i>
+      </a>
+      <div class="navbar-links" id="navbar-link-toogle">
+        <a href="sec-page/second.html" title="View Our Solar System">
+          <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
+            <circle class="sun" cx="16" cy="16" r="3.2" />
+            <g class="third">
+              <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+              <circle cx="28.2" cy="23.1" r="1.7" />
+            </g>
+            <g class="second">
+              <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+              <circle cx="10.6" cy="7.2" r="1.7" />
+            </g>
+            <g class="first">
+              <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+              <circle cx="11.7" cy="21" r="1.7" />
+            </g>
+          </svg>
+        </a>
+        <a class="navbar-links-txt highlight" href="#hero">Home</a>
+        <a class="navbar-links-txt" href="/planets/planets.html">Planets</a>
+        <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
+        <a class="navbar-links-txt" href="/FAQ/faq.html">FAQ</a>
+        <a class="navbar-links-txt" href="/404 page/index.html">Sign</a>
       </div>
     </nav>
   </div>
@@ -74,15 +162,15 @@
 
 
   <!-- first body section (landing page) -->
-<section class="body-start">
+  <!-- <section class="body-start">
   <img src="img/bg.jpg" alt="" srcset="">
-  <button class="glassdoor-btn" id="startButton" onclick="openRocket()">
-    Explore The Galaxy
-  </button>
-</section>
+</section> -->
 
-  <!-- <section id="hero" class="firstsection">
-  </section> -->
+  <section id="hero" class="firstsection">
+    <button class="glassdoor-btn" id="startButton" onclick="openRocket()">
+      Explore The Galaxy
+    </button>
+  </section>
   <!-- ============End of first body section =============== -->
 
 
@@ -93,6 +181,12 @@
   <section class="section-on-body">
     <div class="section-on-body-headings">
       <h1 style="font-weight: 300">Immersive Virtual Exploration</h1>
+    </div>
+    <div class="video">
+      <video autoplay muted>
+        <source src="img/planetsorbiting.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
     <div id="second-video">
       <!-- <video src="" autoplay></video> -->
@@ -113,9 +207,9 @@
 
     <div id="cards-wrapper">
 
-      <div class="cards">
+      <div class="cards" data-aos="fade-right" data-aos-duration="2000">
         <div class="cards-img">
-          <img src="/img/iss.jpg" alt="ISS img">
+          <img src="img/iss.jpg" alt="ISS img">
         </div>
         <div class="cards-text">
           <h2>ISS</h2>
@@ -130,30 +224,24 @@
       </div>
 
 
-      <div class="cards">
-
+      <div class="cards" data-aos="fade-left" data-aos-duration="2000">
         <div class="cards-img">
-          <img src="/img/asteroid.jpg" alt="img" />
+          <img src="img/asteroid.jpg" alt="img" />
         </div>
-
         <div class="cards-text">
-
           <h2>Asteroid</h2>
-
           <p>
             An asteroid is a rocky object that orbits the Sun. Ranging in size
             from small boulders to massive bodies, they offer insights into
             the early solar system and pose potential threats to Earth's
             impact events.
           </p>
-
           <button class="readmore-btn">Read More</button>
-
         </div>
       </div>
 
 
-      
+
       <!-- <div class="cards" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
         data-aos-duration="500">
         <div class="cards-img">
@@ -217,21 +305,23 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <img class="d-block img" src="img/gallery7.jpg">
+        <div class="col-sm" data-aos="fade-left" data-aos-duration="2000">
+          <img class="d-block img" src="img/gallery7.jpg" alt="space iss">
         </div>
-        <div class="col-sm">
-          <img class="d-block img" src="img/gallery4.jpg">
+        <div class="col-sm" data-aos="fade-up" data-aos-duration="2000">
+          <img class="d-block img" src="img/gallery4.jpg" alt="earth">
         </div>
-        <div class="col-sm">
-          <img class="d-block img" src="img/gallery11.jpg">
+        <div class="col-sm" data-aos="fade-right" data-aos-duration="2000">
+          <img class="d-block img" src="img/gallery11.jpg" alt="sun, earth and fabric warp">
         </div>
-        <div class="col-sm">
-          <img class="d-block img" src="img/gallery2.jpg">
+        <div class="col-sm" data-aos="zoom-out" data-aos-duration="2000">
+          <img class="d-block img" src="img/gallery2.jpg" alt="planet">
         </div>
       </div>
     </div>
-    <button class="loadmore-btn">Load More..</button>
+    <a href="gallery/gallery.html">
+      <button class="loadmore-btn">Load More..</button>
+    </a>
   </section>
   <!-- ================== Ending of fifth phase (gallery) ============== -->
 
@@ -253,31 +343,33 @@
           <div class="col2 column1 first">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2188.3669594199605!2d88.41663109062866!3d22.71411824077823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f899496b04114f%3A0x44c94509fa83f16a!2sELITTE%20COLLEGE!5e0!3m2!1sen!2sin!4v1689705253867!5m2!1sen!2sin"
-              style="border:0; width: 100%; height: 500px;" allowfullscreen="" loading="lazy"
+              style="border:0; width: 100%; height: 300px;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="sec2addr">
+              <p>PO: Karnamadhabpur, PS: Ghola, Sodepur, Kolkata - 700113</p>
+              <p><span class="collig">Phone :</span> +91 1234567890</p>
+              <p><span class="collig">Email :</span> xyz@gmail.com</p>
+              <p><span class="collig">Fax :</span> +91 1234567890</p>
+            </div>
           </div>
           <div class="col2 column2 last">
             <div class="sec2innercont">
-              <div class="sec2addr">
-                <p>PO: Karnamadhabpur, PS: Ghola, Sodepur, Kolkata - 700113</p>
-                <p><span class="collig">Phone :</span> +91 1234567890</p>
-                <p><span class="collig">Email :</span> xyz@gmail.com</p>
-                <p><span class="collig">Fax :</span> +91 1234567890</p>
-              </div>
             </div>
             <div class="sec2contactform">
               <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-              <form action="">
+              <form action="https://formspree.io/f/xvojgznn" method="POST">
                 <div class="clearfix">
-                  <input class="col2 first" type="text" placeholder="Name">
-                  <!-- <input class="col2 last" type="text" placeholder="LastName"> -->
+                  <input class="col2 first" type="text" placeholder="Name" required autocomplete="off">
+                  <!-- <input class="col2 last" type="text" placeholder="LastName" required
+                  autocomplete="off"> -->
                 </div>
                 <div class="clearfix">
-                  <input class="col2 first" type="Email" placeholder="Email">
-                  <input class="col2 last" type="text" placeholder="Contact Number">
+                  <input class="col2 first" type="Email" placeholder="Email" required autocomplete="off">
+                  <input class="col2 last" type="text" placeholder="Contact Number" required autocomplete="off">
                 </div>
                 <div class="clearfix">
-                  <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                  <textarea name="textarea" id="" cols="30" rows="7" placeholder="Your message here..." required
+                    autocomplete="off"></textarea>
                 </div>
                 <div class="clearfix" style="margin: 20px 0"><input type="submit" value="Send" class="loadmore-btn">
                 </div>
@@ -294,52 +386,112 @@
 
 
   <!-- ================== Starting of seventh phase (footer) ==============   -->
-  <section id="footer">
-    <div class="row">
-      <div class="col">
-        <img src="img/logo.png" alt="logo" class="logo" style="height: 90px;">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eaque culpa ducimus explicabo laborum, magnam et
-          quis ipsum. Officiis, suscipit!</p>
-      </div>
-      <div class="col">
-        <h3>College <div class="underline"><span></span></div>
-        </h3>
-        <p>Near kalyani Express</p>
-        <p>Madhawpur Village, Mohispota,</p>
-        <p>West Bengal, 700113</p>
-        <p class="email-id">example@gmail.com</p>
-        <h4>+91 - 1234578902</h4>
-      </div>
-      <div class="col">
-        <h3>links <div class="underline"><span></span></div>
-        </h3>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Planets</a></li>
-          <li><a href="">Developers details</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>newslatter <div class="underline"><span></span></div>
-        </h3>
-        <form class="footer-from">
-          <i class="far fa-envelope"></i>
-          <input type="email" placeholder="Enter your email id" required>
-          <button type="submit"><i class="fas fa-arrow-right"></i></button>
-        </form>
-        <div class="social-icons">
-          <i class="fab fa-facebook-f fa-beat-fade"></i>
-          <i class="fab fa-twitter fa-flip"></i>
-          <i class="fab fa-whatsapp fa-shake"></i>
-          <i class=" fab fa-brands fa-github fa-bounce"></i>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container modifiedFooterTop">
+        <div class="row modifyRow">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>
+              <img src="img/logo.png" alt="" srcset="" height="60" width="60">
+              Virtual Galaxy
+            </h3>
+            <p>
+              Elitte College and Engineering, Sodepur<br>
+              Near kalyani Express, Madhawpur Village, Mohispota,<br>
+              West Bengal, 700113<br>
+              <strong>Phone:</strong> +91-9330541033<br>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>
+              Useful Links
+            </h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#hero">Home</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#">Services</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="/policy/policy.html">Terms of service</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="/policy/policy.html">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Our Services</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#">3D Models</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i><a href="#">Planets</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#">Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Community</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#mainabout">About us</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#benefits">Benefits</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i><a href="#achievement">Accomplishments</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> <a href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <hr>
-    <p class="copyright">Copyright <i class="fa-solid fa-copyright"></i> 2023 All rights
-      reserved | this template is madewith ❤️ by GOAT Elitte Coders </p>
-  </section>
+    <div class="container py-4 modifiedFooter">
+      <div class="social-links text-md-end pt-3 pt-md-0 socialLinkMod">
+        <div class="textSocials">Stay in the loop?</div>
+        <a href="https://wa.me/9330541033" target="_blank" aria-label="Visit us on Whatapp"
+          title="Whatapp (External Link)" rel="noopener noreferrer" class="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Visit us on Twitter" title="Twitter (External Link)"
+          rel="noopener noreferrer" class="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Visit us on Facebook"
+          title="Facebook (External Link)" rel="noopener noreferrer" class="facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Visit us on Instagram"
+          title="Instagram (External Link)" rel="noopener noreferrer" class="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/" target="_blank" aria-label="Visit us on Linkedin"
+          title="Linkedin (External Link)" rel="noopener noreferrer" class="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        </a>
+        <a href="https://github.com/Git21221/IBMSkillsBuild" target="_blank" class="github">
+          <i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="me-md-auto text-md-start crMod">
+        <div class="copyright">
+          © Copyright <strong><span>Virtual Galaxy</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">Designed by <a href="#">G.O.A.T Elitte coders</a></div>
+      </div>
+    </div>
+  </footer>
   <!-- ================== Ending of seventh phase (footer) ==============   -->
 
 
@@ -348,7 +500,7 @@
 
   <!-- scroll to top image  -->
   <a href="#hero" class="scroll-top">
-    <img src="img/scroll-img.png" alt="scrollTotopimage" />
+    <img src="img/scroll-img.png" alt="scrollTotopimage" width="80px" />
   </a>
   <!-- scroll to top image(close)  -->
 

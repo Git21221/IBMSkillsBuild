@@ -1,0 +1,106 @@
+section:not(:target):not(#home),
+section:target~#home {
+    display: none
+}
+
+.subNav{
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+.subNav a{
+    color: #ffffff;
+    transition: 0.3s linear;
+    padding: 0.5rem 1.5rem;
+
+}
+.subNav a:hover, .highlightSub{
+    transition: 0.3s linear;
+    background-color: white;
+    color: black;
+    border-radius: 60px;
+}
+#planets, #dplanets, #iss, #asteroid, #ss, #probe{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.definition{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+}
+.question{
+    padding: 20px;
+    font-size: 2rem;
+}
+.answer{
+    padding: 20px;
+    font-size: 1.17rem;
+    text-align: justify;
+    color: rgb(190, 190, 190);
+}
+.planet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+.imgs, .details{
+    width: 50%;
+    padding: 20px;
+}
+.details ul{
+    line-height: 2.5rem;
+    font-size: 1.19rem;
+}
+#planets img, #dplanets img, #iss img, #asteroid img, #ss img, #probe img{
+    height: auto;
+    width: 100%;
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.planet::after, .definition::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #535353;
+}
+
+.downloadOp, .tdOp, .thdOp{
+    border: 1px solid #535353;
+    padding: 10px 14px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+.downloadOp:hover, .tdOp:hover, .thdOp:hover{
+    transition: 0.3s ease-in-out;
+    background-color: #535353;
+    padding: 10px 14px;
+    border-radius: 50%;
+}
