@@ -1,90 +1,89 @@
 /* ========== responsiveness=========== */
 @media only screen and (max-width: 1266px) {
-	.section2 {
-		width: 100%;
-	}
+  .section2 {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 960px) {
-	.container {
-		padding: 0 30px 70px;
-	}
+  .container {
+    padding: 0 30px 70px;
+  }
 
-	.section2 .col2 {
-		width: 100%;
-		display: block;
-	}
+  .section2 .col2 {
+    width: 100%;
+    display: block;
+  }
 
-	.section2 .col2.first {
-		margin-bottom: 10px;
-	}
+  .section2 .col2.first {
+    margin-bottom: 10px;
+  }
 
-	.section2 .col2.column2 {
-		padding: 0;
-	}
+  .section2 .col2.column2 {
+    padding: 0;
+  }
 
-	body .sec2map {
-		height: 250px !important;
-	}
+  body .sec2map {
+    height: 250px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-	.section2 .sec2addr {
-		font-size: 14px;
-	}
+  .section2 .sec2addr {
+    font-size: 14px;
+  }
 
-	.section2 .sec2contactform h3 {
-		font-size: 16px;
-	}
+  .section2 .sec2contactform h3 {
+    font-size: 16px;
+  }
 
-	.section2 .sec2contactform input[type="text"],
-	.section2 .sec2contactform input[type="email"],
-	.section2 .sec2contactform textarea {
-		padding: 10px;
-		margin: 3px 0;
-	}
+  .section2 .sec2contactform input[type="text"],
+  .section2 .sec2contactform input[type="email"],
+  .section2 .sec2contactform textarea {
+    padding: 10px;
+    margin: 3px 0;
+  }
 
-	.section2 .sec2contactform input[type="submit"] {
-		padding: 10px 30px;
-		font-size: 14px;
-	}
+  .section2 .sec2contactform input[type="submit"] {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 420px) {
-	.section1 h1 {
-		font-size: 28px;
-	}
+  .section1 h1 {
+    font-size: 28px;
+  }
 }
 
-@media (max-width:856px) {
-	#cards-wrapper {
-		flex-direction: column;
-		row-gap: 60px;
-	}
+@media (max-width: 856px) {
+  #cards-wrapper {
+    flex-direction: column;
+    row-gap: 60px;
+  }
 
-	#explore-wrapper {
-		flex-direction: column;
-		row-gap: 60px;
-	}
+  #explore-wrapper {
+    flex-direction: column;
+    row-gap: 60px;
+  }
 
-	#exploreright-txt {
-		width: 100%;
-	}
+  #exploreright-txt {
+    width: 100%;
+  }
 
-	.fa-solid {
-		display: contents;
-	}
+  .fa-solid {
+    display: contents;
+  }
 
-	.navbar-links {
-		display: none;
-	}
+  .navbar-links {
+    display: none;
+  }
 
-	.icon #activei {
-		display: flex;
-		flex-direction: column;
-		padding-right: 30px;
-	}
-
+  .icon #activei {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+  }
 	.activei {
 		background-color: rgb(0, 0, 0);
 		display: flex;
@@ -99,55 +98,71 @@
 }
 
 @media (max-width: 320px) {
-	.cards {
-		width: 100%;
-	}
+  .cards {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
-	.modifiedFooter {
-		flex-direction: column;
-		row-gap: 20px;
-		max-width: fit-content;
-	}
+  .modifiedFooter {
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: fit-content;
+  }
 }
 
 @media (max-width: 668px) {
-	#footer .social-links a {
-		height: 30px;
-		width: 30px;
-		border-radius: 50%;
-		font-size: 1rem;
-	}
+  #footer .social-links a {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 484px) {
-	h1 {
-		font-size: 1.5rem;
-	}
+  h1 {
+    font-size: 1.5rem;
+  }
 
-	#exploreright-txt {
-		font-size: 20px;
-	}
+  #exploreright-txt {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 500px) {
-	.info {
-		flex-direction: column;
-	}
-	.venus .info, .mars .info, .saturn .info, .neptune .info, .pluto .info, .haumea .info{
-		flex-direction: column-reverse;
-	}
+  .info {
+    flex-direction: column;
+  }
+  .venus .info,
+  .mars .info,
+  .saturn .info,
+  .neptune .info,
+  .pluto .info,
+  .haumea .info {
+    flex-direction: column-reverse;
+  }
 
-	.imgs,
-	.details {
-		width: 100%;
-		margin: 20px;
-		padding: 0 50px;
-	}
+  .imgs,
+  .details {
+    width: 100%;
+    margin: 20px;
+    padding: 0 50px;
+  }
 }
 @media (max-width: 664px) {
-	.subNav{
-		flex-direction: column;
-	}
+  .subNav {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  #hero {
+    background: url(/img/bgmobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
