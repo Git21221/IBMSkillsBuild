@@ -14,15 +14,71 @@
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-#preloader{
-  position: fixed;
-	height: 100vh;
-	width: 100%;
-	background: url(/img/SVKl.gif) no-repeat black;
-	background-size: 20%;
-	background-position: center;
-  z-index: 99999999;
+
+#box{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+#box h3{
+  font-family: 'Outfit', sans-serif;
+  position: relative;
+  top: 100px;
+  color: white;
+  font-weight: 300;
+}
+#preloader {
+  position: fixed;
+  display: block;
+  width: 120px;
+  height: 140px;
+  background-image: radial-gradient(circle 30px, #fff 100%, transparent 0),
+    radial-gradient(circle 5px, #fff 100%, transparent 0),
+    radial-gradient(circle 5px, #fff 100%, transparent 0),
+    linear-gradient(#FFF 20px, transparent 0);
+  background-position: center 127px, 94px 102px, 16px 18px, center 114px;
+  background-size: 60px 60px, 10px 10px, 10px 10px, 4px 14px;
+  background-repeat: no-repeat;
+  z-index: 99999;
+  perspective: 500px;
+}
+
+#preloader::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%) rotate(-45deg);
+  border-right-color: transparent;
+  box-sizing: border-box;
+}
+
+#preloader::after {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  transform: translate(-50%, -55%) rotate(-45deg) rotateY(0deg);
+  left: 50%;
+  top: 50%;
+  box-sizing: border-box;
+  border: 7px solid #FF3D00;
+  border-radius: 50%;
+  animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)
+  }
+}
+
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -41,7 +97,6 @@ html {
 body {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-display: optional;
   background-color: rgb(8, 8, 8);
   overflow-x: hidden;
 }
@@ -102,11 +157,18 @@ a:hover {
   transition: 0.3s linear;
 }
 
-.navbar-links-txt:hover, .highlight {
+.navbar-links-txt:hover,
+.highlight {
   background-color: #fff;
   color: black;
   transition: 0.3s linear;
   text-decoration: none;
+}
+
+.navbar-img img{
+  width: 70px;
+  height: 70px;
+  padding: 10px;
 }
 
 
@@ -240,12 +302,12 @@ a:hover {
   height: calc(550px - 34px - 200px);
 }
 
-.cards-text > h2 {
+.cards-text>h2 {
   color: #d1d1d1;
   font-size: 1.5rem;
 }
 
-.cards-text > p {
+.cards-text>p {
   font-size: 18px;
 }
 
@@ -321,7 +383,7 @@ a:hover {
   width: 500px;
 }
 
-#exploreright-txt > p {
+#exploreright-txt>p {
   padding-bottom: 20px;
 }
 
@@ -334,6 +396,8 @@ a:hover {
 
 .img {
   width: 300px;
+  height: 200px;
+  object-fit: contain;
   border-radius: 20px;
   box-shadow: 1px 3px 10px rgb(235, 235, 235);
 }
@@ -435,10 +499,11 @@ select:focus {
   resize: none;
 }
 
-.section2 .sec2contactform h3 {
+.section2 .sec2contactform h2 {
   font-weight: normal;
   margin: 20px 0;
   margin-top: 30px;
+  font-size: 1.9rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 19px;
   color: #d1d1d1;
@@ -455,11 +520,14 @@ select:focus {
 }
 
 .scroll-top img {
+  height: 80px;
+  width: 80px;
   animation: float 3s linear infinite;
   transition: transform 0.5s ease;
 }
 
 @keyframes float {
+
   100%,
   0% {
     transform: translateY(0rem);
@@ -612,8 +680,7 @@ select:focus {
   width: 50px;
 }
 
-#orrery >
-.first,
+#orrery>.first,
 .second,
 .third {
   animation-name: spin;
@@ -626,15 +693,15 @@ select:focus {
   transform-origin: 50% 50%;
 }
 
-#orrery >.third {
+#orrery>.third {
   animation-duration: 10s;
 }
 
-#orrery >.second {
+#orrery>.second {
   animation-duration: 6.2s;
 }
 
-#orrery >.first {
+#orrery>.first {
   animation-duration: 2.4s;
 }
 

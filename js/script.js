@@ -1,8 +1,11 @@
 
-const loader = document.getElementById("preloader");
+// const loader = document.getElementById("preloader");
+const box = document.getElementById("box");
 
 window.addEventListener("load", () => {
-  loader.style.display = 'none';
+  // loader.style.display = 'none';
+  box.style.display = 'none';
+
 })
 
 
