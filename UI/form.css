@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+::selection{
+    color: #ececee;
+    background: #00b3ff;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: relative;
+    background: rgba(230, 232, 236, 0.4);
+    border-radius: 30px;
+    padding: 30px;
+    color: #080808;
+    margin: 15px;
+    backdrop-filter: blur(1rem);
+}
+.form h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.form p{
+    font-size: 14px;
+    font-weight: 700;
+}
+label{
+    padding: 0 0px;
+}
+.form form .profile-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    margin: 18px 30px;
+    background: #1139d6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/768px-Circle-icons-profile.svg.png");
+    border-radius: 50%;
+    border: 4px solid #f3f7f307;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.file-upload{
+    position: absolute;
+    top: 0;
+    right: -15px;
+    display: flex;
+    border-radius: 50%;
+    background: white;
+    transition: 1s;
+    font-size: 14px;
+}
+form input[type="file"]{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+    padding: 20px;
+}
+form i{
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+    color: #333;
+    z-index: 100;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.file-upload:hover i{
+    color: #2938aa;
+}
+.form form .error-text{
+    display: none;
+    color: #851923;
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #ffe3e5;
+    border: 1px solid #dfa5ab;
+    margin-bottom: 8px;
+}
+.form .grid-details{
+    display: flex;
+    column-gap: 10px;
+}
+.input{
+    display: flex;
+    row-gap: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.form form .input input{
+    height: 40px;
+    width: 300px;
+    font-size: 14px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+}
+.form form .input input:focus,
+.form form .input input:valid{
+    border: 2px solid #00b3ff;
+    transition: 0.1s ease;
+    outline: none;
+}
+
+.form form input.button{
+    height: 45px;
+    border: none;
+    color: #f2f3f7;
+    width: 100%;
+    background: rgb(78, 78, 78);
+    font-size: 17px;
+    border-radius: 30px;
+    transition: 0.3s linear;
+    cursor: pointer;
+    border: 2px solid#2b2b2b;
+}
+.form form input.button:hover{
+    transition: 0.3s linear;
+    background: #2b2b2b;
+}
+.link{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.form .link{
+    font-size: 17px;
+}
+.form .link a{
+    color: rgb(0, 56, 80);
+    transition: 0.5s all;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+/* responsiveness */
+@media (max-width: 400px) {
+    .form{
+        min-width: 95vw;
+    }
+    .form form .input input{
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .grid-details{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

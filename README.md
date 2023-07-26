@@ -23,3 +23,7 @@ Welcome to the 3D Solar System project! This project aims to provide a visually 
 - Zoom in/out and rotate the solar system for a better view.
 - Click on planets to learn more about them and their characteristics.
 - Real-time information on planetary positions and orbits.
+
+
+# Cloning started 13 July, 2023
+![image](https://github.com/Git21221/IBMSkillsBuild/assets/101005577/3e4a6e5e-64de-4d76-9e78-3a078c7d6d5e)
