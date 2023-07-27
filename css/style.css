@@ -164,6 +164,11 @@ a:hover {
   transition: 0.3s linear;
   text-decoration: none;
 }
+.svghighlight{
+  padding: 0 10px;
+  border-radius: 60px;
+  border: 2px solid white;
+}
 
 .navbar-img img{
   width: 70px;
