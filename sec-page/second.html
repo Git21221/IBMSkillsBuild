@@ -34,6 +34,10 @@
 </head>
 
 <body class="opening hide-UI view-2D zoom-large data-close controls-close" id="main-page">
+  <div id="box">
+    <div id="preloader"></div>
+    <h3> This may take a while </h3>
+  </div>
   <!-- nav bar -->
   <nav class="navbar-top">
     <div class="navbar-logo-and-text">
@@ -46,10 +50,28 @@
       <i class="fa-solid fa-bars" id="activei"></i>
     </a>
     <div class="navbar-links" id="navbar-link-toogle">
-      <a class="navbar-links-txt highlight" href="../indexafter.html#hero">Home</a>
-      <a class="navbar-links-txt" href="../planets/planets.html">Planets</a>
-      <a class="navbar-links-txt" href="../gallery/gallery.html">Gallery</a>
-      <a class="navbar-links-txt" href="../FAQ/faq.html">FAQ</a>
+      <a href="sec-page/second.html" title="View Our Solar System" class="svghighlight">
+        <svg xmlns="http://www.w3.org/2000/svg" id="orrery" enable-background="new 0 0 32 32" viewBox="0 0 32 32">
+          <circle class="sun" cx="16" cy="16" r="3.2" />
+          <g class="third">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+            <circle cx="28.2" cy="23.1" r="1.7" />
+          </g>
+          <g class="second">
+            <circle cx="16" cy="16" r="10.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+            <circle cx="10.6" cy="7.2" r="1.7" />
+          </g>
+          <g class="first">
+            <circle cx="16" cy="16" r="6.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".9" />
+            <circle cx="11.7" cy="21" r="1.7" />
+          </g>
+        </svg>
+      </a>
+      <a class="navbar-links-txt" href="/index.html#hero">Home</a>
+      <a class="navbar-links-txt" href="/planets/planets.html#planets">Planets</a>
+      <a class="navbar-links-txt" href="/gallery/gallery.html">Gallery</a>
+      <a class="navbar-links-txt" href="/FAQ/faq.html">FAQ</a>
+      <!-- <a class="navbar-links-txt" href="404 page/index.html">Sign</a> -->
     </div>
   </nav>
   <!-- navbar end  -->
