@@ -1547,6 +1547,7 @@ h1 {
 
 #data a.active {
   color: #0cf;
+  border-bottom: #0cf;
 }
 
 #navbar a {
