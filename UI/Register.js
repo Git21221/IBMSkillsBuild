@@ -17,7 +17,7 @@ submitbtn.onclick = () =>{
     if(fname.value.length>0 && lname.value.length>0 && email.value.length>0 && image.value.length>0 && phone.value.length>0 && password.value.length>0 && cpassword.value.length>0){
         if(password.value == cpassword.value){
             alert("Registration Successfull");
-            location.href="./indexafter.html";
+            location.href="../indexafter.html";
         }
         else
         {

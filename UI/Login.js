@@ -11,7 +11,7 @@ submitbtn.onclick = () =>{
     //if we buy domain then remove this
     if(email.value.length>0 && password.value.length>0){
     alert("Login Successfull");
-    location.href="./indexafter.html";}
+    location.href="../indexafter.html";}
     else{
         alert("All Fields are required");
     }
