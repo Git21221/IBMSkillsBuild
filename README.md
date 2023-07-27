@@ -4,6 +4,8 @@
 ![image](https://github.com/Git21221/IBMSkillsBuild/assets/101005577/486122bf-8045-4820-8753-a0ed3db84ef4)
 ## 25th June, 2023
 
+# Live website: https://virtual-galaxy.netlify.app/
+
 # 3D Solar System
 
 Welcome to the 3D Solar System project! This project aims to provide a visually immersive experience of our solar system in a 3D environment. Users can explore the planets, their moons, and other celestial objects in an interactive way.
