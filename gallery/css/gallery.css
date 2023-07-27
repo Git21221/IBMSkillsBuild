@@ -20,6 +20,9 @@ body{
     font-family: 'Outfit', sans-serif;
     background-color: #181818;
 }
+nav:hover, section:hover, #gallery:hover{
+  cursor: url('/img/cursor-rocket.png'), auto;
+}
 .bg-black{
     background-color: rgb(34, 34, 34);
 }

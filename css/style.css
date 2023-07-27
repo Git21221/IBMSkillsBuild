@@ -14,7 +14,9 @@
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+nav:hover, section:hover{
+  cursor: url('/img/cursor-rocket.png'), auto;
+}
 #box{
   height: 100vh;
   display: flex;
