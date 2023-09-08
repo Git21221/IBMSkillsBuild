@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6bb56a2c-b5ca-461c-91e7-d6f3c2a61268/deploy-status)](https://app.netlify.com/sites/virtual-galaxy/deploys)
 <img src="https://t.bkit.co/w_64bed145dbeb7.gif" />
+<img src="https://img.shields.io/github/forks/Git21221/IBMSkillsBuild?style=for-the-badge" />
+<img src="https://img.shields.io/github/repo-size/Git21221/IBMSkillsBuild?style=for-the-badge" />
 # Date of Project Creation
 ![image](https://github.com/Git21221/IBMSkillsBuild/assets/101005577/486122bf-8045-4820-8753-a0ed3db84ef4)
 ## 25th June, 2023
