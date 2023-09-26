@@ -48,6 +48,10 @@
     padding: 10px 30px;
     font-size: 14px;
   }
+  .section-on-body .carousel img{
+    height: 10rem;
+    width: 10rem;
+  }
 }
 
 @media only screen and (max-width: 420px) {

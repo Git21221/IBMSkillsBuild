@@ -14,18 +14,19 @@
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-nav:hover, section:hover{
-  cursor: url('/img/cursor-rocket.png'), auto;
+nav:hover,
+section:hover {
+  cursor: url("/img/cursor-rocket.png"), auto;
 }
-#box{
+#box {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#box h3{
-  font-family: 'Outfit', sans-serif;
+#box h3 {
+  font-family: "Outfit", sans-serif;
   position: relative;
   top: 100px;
   color: white;
@@ -39,7 +40,7 @@ nav:hover, section:hover{
   background-image: radial-gradient(circle 30px, #fff 100%, transparent 0),
     radial-gradient(circle 5px, #fff 100%, transparent 0),
     radial-gradient(circle 5px, #fff 100%, transparent 0),
-    linear-gradient(#FFF 20px, transparent 0);
+    linear-gradient(#fff 20px, transparent 0);
   background-position: center 127px, 94px 102px, 16px 18px, center 114px;
   background-size: 60px 60px, 10px 10px, 10px 10px, 4px 14px;
   background-repeat: no-repeat;
@@ -48,7 +49,7 @@ nav:hover, section:hover{
 }
 
 #preloader::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100px;
   height: 100px;
@@ -62,7 +63,7 @@ nav:hover, section:hover{
 }
 
 #preloader::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 80px;
   width: 80px;
@@ -70,14 +71,14 @@ nav:hover, section:hover{
   left: 50%;
   top: 50%;
   box-sizing: border-box;
-  border: 7px solid #FF3D00;
+  border: 7px solid #ff3d00;
   border-radius: 50%;
   animation: rotate 0.5s linear infinite;
 }
 
 @keyframes rotate {
   to {
-    transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg)
+    transform: translate(-50%, -55%) rotate(-45deg) rotateY(360deg);
   }
 }
 
@@ -166,18 +167,17 @@ a:hover {
   transition: 0.3s linear;
   text-decoration: none;
 }
-.svghighlight{
+.svghighlight {
   padding: 0 10px;
   border-radius: 60px;
   border: 2px solid white;
 }
 
-.navbar-img img{
+.navbar-img img {
   width: 70px;
   height: 70px;
   padding: 10px;
 }
-
 
 /* ========== Navbar style done ============== */
 
@@ -309,12 +309,12 @@ a:hover {
   height: calc(550px - 34px - 200px);
 }
 
-.cards-text>h2 {
+.cards-text > h2 {
   color: #d1d1d1;
   font-size: 1.5rem;
 }
 
-.cards-text>p {
+.cards-text > p {
   font-size: 18px;
 }
 
@@ -390,13 +390,13 @@ a:hover {
   width: 500px;
 }
 
-#exploreright-txt>p {
+#exploreright-txt > p {
   padding-bottom: 20px;
 }
 
 /* =============== galery start here============= */
 
-.col-sm {
+/* .col-sm {
   display: flex;
   justify-content: center;
 }
@@ -407,8 +407,26 @@ a:hover {
   object-fit: contain;
   border-radius: 20px;
   box-shadow: 1px 3px 10px rgb(235, 235, 235);
-}
+} */
 
+.section-on-body .carousel {
+  height: 70vh;
+  width: 100vw;
+}
+.carousel > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 5px #fff;
+}
+.carousel img {
+  height: 18rem;
+  width: 18rem;
+  -webkit-box-reflect: below 20px
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
 /* ============== contact ================ */
 input:focus,
 textarea:focus,
@@ -534,7 +552,6 @@ select:focus {
 }
 
 @keyframes float {
-
   100%,
   0% {
     transform: translateY(0rem);
@@ -688,7 +705,7 @@ select:focus {
   margin: 0 10px;
 }
 
-#orrery>.first,
+#orrery > .first,
 .second,
 .third {
   animation-name: spin;
@@ -701,15 +718,15 @@ select:focus {
   transform-origin: 50% 50%;
 }
 
-#orrery>.third {
+#orrery > .third {
   animation-duration: 10s;
 }
 
-#orrery>.second {
+#orrery > .second {
   animation-duration: 6.2s;
 }
 
-#orrery>.first {
+#orrery > .first {
   animation-duration: 2.4s;
 }
 

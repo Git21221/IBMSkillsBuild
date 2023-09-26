@@ -9,5 +9,5 @@
     "application/javascript": ["js"],
     "video/mp4": ["mp4"]
   },
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5502
 }
