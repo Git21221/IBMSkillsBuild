@@ -1,3 +1,80 @@
+# Virtual Galaxy
+
+Virtual Galaxy is an educational project designed to take learners on an extraordinary journey through the vast cosmos. Whether you're a student, a space enthusiast, or just someone with a curious mind, this interactive platform provides an immersive and engaging experience for exploring the mysteries of our universe.
+
+## Project Description
+
+🚀 **Explore the Universe**: With Virtual Galaxy, you can embark on a virtual tour of our solar system and beyond. Dive into the depths of space to discover planets, moons, stars, and galaxies up close.
+
+🌌 **3D Visualizations**: Our project offers stunning 3D visualizations that bring celestial bodies to life. Witness the intricate details of planets, the beauty of their orbits, and the breathtaking vastness of the cosmos.
+
+🪐 **Learn and Discover**: This platform is not just about visuals; it's also an educational resource. Click on planets to access comprehensive information about their characteristics, history, and significance in the universe.
+
+🌟 **Real-Time Data**: Stay updated with real-time data on planetary positions and orbits, providing an authentic and dynamic learning experience.
+
+📚 **Education and Inspiration**: Virtual Galaxy aims to inspire a passion for space exploration and foster a deeper understanding of the cosmos. It's an ideal resource for educators, students, and anyone keen on expanding their knowledge of astronomy and space science.
+
+🛰️ **Open Source and Collaboration**: We encourage collaboration and contributions from the community to enhance and expand Virtual Galaxy's features, making it a valuable tool for space education.
+
+🌠 **Join Us on the Journey**: Embark on this cosmic journey with Virtual Galaxy, and let your curiosity about the universe soar. The final frontier is now at your fingertips.
+
+Visit the live website at [Virtual Galaxy](https://virtual-galaxy.netlify.app/) and start your celestial adventure today!
+## Screenshots
+
+![sp](https://github.com/Git21221/IBMSkillsBuild/assets/77888604/4f44e6e2-121e-4253-9c21-0fde903ad61b)
+
+
+
+## Authors
+
+- [@Saikat](https://github.com/git21221)
+
+![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6bb56a2c-b5ca-461c-91e7-d6f3c2a61268/deploy-status)](https://app.netlify.com/sites/virtual-galaxy/deploys)
+
+
+[![GitHub Stars](https://img.shields.io/github/stars/git21221?style=for-the-badge)](https://github.com/git21221)
+
+
+
+
+
+## Tech Stack
+
+**Client:**  css, html, javascript, three-js , locomotive-js scroll-trigger
+
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Git21221/IBMSkillsBuild.git
+```
+
+Go to the project directory ushing
+
+```bash
+  cd IBMSkillsBuild
+```
+
+Start the project ushing go live button
+
+### please make sure that you installed live server in vs code
+
+## Contributing
+
+Contributions are always welcome!
+
+ ## See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
 # Contribution 
 # How can I contribute in `Virtual Galaxy`?
 1) first `star` our repo. ![image](https://github.com/Git21221/IBMSkillsBuild/assets/101005577/74657b1d-b3c5-45fd-861c-344144259881)
@@ -13,37 +90,5 @@
 8) Now come to our repo and make a pull request with issue link and proper screenshot.
 9) We will review and merge it soon.
 10) Your participation is made with us.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6bb56a2c-b5ca-461c-91e7-d6f3c2a61268/deploy-status)](https://app.netlify.com/sites/virtual-galaxy/deploys)
-<img src="https://t.bkit.co/w_64bed145dbeb7.gif" />
-<img src="https://img.shields.io/github/forks/Git21221/IBMSkillsBuild?style=for-the-badge" />
-<img src="https://img.shields.io/github/repo-size/Git21221/IBMSkillsBuild?style=for-the-badge" />
-# Date of Project Creation
-![image](https://github.com/Git21221/IBMSkillsBuild/assets/101005577/486122bf-8045-4820-8753-a0ed3db84ef4)
-## 25th June, 2023
-
 # Live website: https://virtual-galaxy.netlify.app/
 
-# 3D Solar System
-
-Welcome to the 3D Solar System project! This project aims to provide a visually immersive experience of our solar system in a 3D environment. Users can explore the planets, their moons, and other celestial objects in an interactive way.
-
-## Table of Contents
-
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-
-- Interactive 3D visualization of the solar system.
-- Accurate representation of planets, moons, and other celestial bodies.
-- Zoom in/out and rotate the solar system for a better view.
-- Click on planets to learn more about them and their characteristics.
-- Real-time information on planetary positions and orbits.
-
-
-# Cloning started 13 July, 2023
-![image](https://github.com/Git21221/IBMSkillsBuild/assets/101005577/3e4a6e5e-64de-4d76-9e78-3a078c7d6d5e)
