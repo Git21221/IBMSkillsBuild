@@ -17,7 +17,8 @@ body:hover {
 }
 
 .faq-sec {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 90%;
   margin: 6rem auto;
   display: flex;
