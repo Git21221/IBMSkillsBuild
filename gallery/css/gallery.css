@@ -30,3 +30,9 @@ nav:hover, section:hover, #gallery:hover{
   object-fit: contain;
   aspect-ratio: 3 / 2;
 }
+.content{
+  display: flex;
+  flex-direction: column;
+  min-height: 15rem;
+  justify-content: space-between;
+}
