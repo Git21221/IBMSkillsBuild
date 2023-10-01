@@ -57,13 +57,13 @@ Clone the project
   git clone https://github.com/Git21221/IBMSkillsBuild.git
 ```
 
-Go to the project directory ushing
+Go to the project directory
 
 ```bash
   cd IBMSkillsBuild
 ```
 
-Start the project ushing go live button
+Start the project using go live button
 
 ### please make sure that you installed live server in vs code
 
