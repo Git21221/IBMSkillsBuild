@@ -27,7 +27,7 @@ nav:hover, section:hover, #gallery:hover{
     background-color: rgb(34, 34, 34);
 }
 .rounded img{
-  object-fit: contain;
+  padding: 10px 10px;
   aspect-ratio: 3 / 2;
 }
 .content{
