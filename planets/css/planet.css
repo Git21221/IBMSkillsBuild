@@ -95,7 +95,7 @@ section:target ~ #home {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 0.8rem 0;
+  margin-top: 1.1rem;
 }
 .planet::after,
 .definition::after {
