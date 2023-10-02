@@ -36,3 +36,6 @@ nav:hover, section:hover, #gallery:hover{
   min-height: 15rem;
   justify-content: space-between;
 }
+.badge-pill{
+padding: 4px 5px;
+}
