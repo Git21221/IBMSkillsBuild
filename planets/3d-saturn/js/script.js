@@ -29,7 +29,17 @@ loader.load(hdrTexture, function(texture){
     scene.environment = texture
 })
 // adding scene
-scene.add(mesh);
+// scene.add(mesh);
+
+//adding ring
+const ringGeo=new THREE.RingGeometry(4.5,6,100);
+const satTexture=new THREE.TextureLoader().load('images/saturnRing.png');
+const ringMat=new THREE.MeshBasicMaterial({map:satTexture,side:THREE.DoubleSide});
+const satMesh=new THREE.Mesh(ringGeo,ringMat);
+satMesh.rotation.x = -0.51 * Math.PI;
+scene.add(mesh,satMesh);
+
+
 
 //adding grid helper
 // scene.add(gridhelper);
