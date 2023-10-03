@@ -65,7 +65,8 @@ window.addEventListener("resize", () => {
 controls.enableDamping = true
 controls.enablePan = false // off right click position change
 controls.enableZoom = true // off zooming on planet
-controls.autoRotate = false;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 0.5;
 // controls.autoRotateSpeed = 0.7;
 
 const loop = () => {
