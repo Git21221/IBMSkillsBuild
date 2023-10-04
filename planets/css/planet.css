@@ -1,8 +1,7 @@
-section:not(:target):not(#home),
+section:not(:target):not(#home):not(#top),
 section:target ~ #home {
   display: none;
 }
-
 .subNav {
   position: relative;
   top: 100px;
