@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: rgb(219, 219, 219);
+}
+
+.privacy {
+  min-height: 100vh;
+  height: auto;
+  width: 90%;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin: 4rem 0rem 0 0;
+}
+
+.privacy h2 {
+  font-size: 2.5rem;
+}
+
+.privacy-policy {
+  max-width: 1000px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content p {
+  padding: 1rem 0 0 0;
+  margin: 0;
+  line-height: 1.3;
+  font-size: 1.4rem;
+  color: #bebebe;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 20px;
+}
