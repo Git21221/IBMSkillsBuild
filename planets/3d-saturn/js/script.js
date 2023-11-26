@@ -1,6 +1,6 @@
 import * as THREE from '../../three.js-master/build/three.module.js'
 import { RGBELoader } from '../../three.js-master/examples/jsm/loaders/RGBELoader.js'
-import {OrbitControls} from '../../three.js-master/examples/jsm/controls/OrbitControls.js'
+import { OrbitControls } from '../../three.js-master/examples/jsm/controls/OrbitControls.js'
 // sizes of my screen
 let sizes = {
     width: window.innerWidth,
@@ -9,7 +9,7 @@ let sizes = {
 //declaring all things here
 const scene = new THREE.Scene(); //creating scene
 const geometry = new THREE.SphereGeometry(3, 40, 40); //sphere geometry
-const material = new THREE.MeshBasicMaterial({map: new THREE.TextureLoader().load('images/8k_saturn.jpg')}); //material
+const material = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('images/8k_saturn.jpg') }); //material
 const mesh = new THREE.Mesh(geometry, material)
 const axishelper = new THREE.AxesHelper(20); //using axis helper to see axis
 const gridhelper = new THREE.GridHelper(20, 10); // using grid helper to see grid
@@ -23,7 +23,7 @@ const loader = new RGBELoader();
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping
 renderer.toneMappingExposure = 0.6
-loader.load(hdrTexture, function(texture){
+loader.load(hdrTexture, function (texture) {
     texture.mapping = THREE.EquirectangularReflectionMapping
     scene.background = texture;
     scene.environment = texture
@@ -32,12 +32,12 @@ loader.load(hdrTexture, function(texture){
 // scene.add(mesh);
 
 //adding ring
-const ringGeo=new THREE.RingGeometry(4.5,6,100);
-const satTexture=new THREE.TextureLoader().load('images/saturnRing.png');
-const ringMat=new THREE.MeshBasicMaterial({map:satTexture,side:THREE.DoubleSide});
-const satMesh=new THREE.Mesh(ringGeo,ringMat);
+const ringGeo = new THREE.RingGeometry(4.4, 6, 100);
+const satTexture = new THREE.TextureLoader().load('images/saturnRing.png');
+const ringMat = new THREE.MeshBasicMaterial({ map: satTexture, side: THREE.DoubleSide });
+const satMesh = new THREE.Mesh(ringGeo, ringMat);
 satMesh.rotation.x = -0.51 * Math.PI;
-scene.add(mesh,satMesh);
+scene.add(mesh, satMesh);
 
 
 
