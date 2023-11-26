@@ -356,6 +356,11 @@ a:hover {
   background-color: rgb(63, 63, 63);
 }
 
+.send-btn {
+  width: 220px;
+  margin: 0 150px;
+}
+
 /* ===============  explore section start here ====================*/
 #explore {
   height: 100vh;
@@ -495,6 +500,10 @@ select:focus {
 
 .section2 .col2.last {
   float: right;
+}
+
+.section2 .col2 .first.name {
+  width: 100%;
 }
 
 .section2 .col2.column2 {
